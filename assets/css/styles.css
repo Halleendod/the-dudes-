@@ -133,6 +133,16 @@
   justify-content: space-between;
 }
 
+.why-us-image {
+  width: 41%;
+}
+
+.why-us-image img {
+  border-radius: 10px;
+  width: 100%;
+  border: 3px solid #737373;
+}
+
 .why-us-content {
   width: 40%;
   display: flex;
@@ -140,7 +150,9 @@
   align-items: center;
 }
 
-.why-us-content h2 {text-align: center;}
+.why-us-content h2 {
+  text-align: center;
+}
 
 .why-us-content p {
   font-weight: bold;
