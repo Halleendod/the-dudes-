@@ -58,6 +58,10 @@
     font-weight: bold;
   }
 
+  nav ul li a:hover {
+    color: #0097B2;
+  }
+
   .call-to-action {
     background-color: #0097B2;
     padding: 15px 25px;
