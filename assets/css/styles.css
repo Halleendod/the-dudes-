@@ -8,6 +8,10 @@
     font-family: "Poppins", sans-serif;
   }
 
+  .mobile {display: none;}
+
+  .desktop {display: flex;}
+
   p {font-size: 1rem;}
 
   h1 {font-size: 4rem;}
@@ -24,7 +28,7 @@
   
   .header-section {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     background-color: var(--secondary-color);
     position: fixed;
     width: 100%;
@@ -33,15 +37,21 @@
     border-bottom-right-radius: 20px;
   }
 
-  .logo {
-    margin-left: 10%;
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .logo.desktop {
+    margin-left:10%;
   }
 
   .nav-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
+
   }
 
   nav ul {
@@ -103,7 +113,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background-color: rgba(0, 0, 0, 0.4); */
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
@@ -116,7 +125,6 @@
     color: var(--primary-color);
     line-height: 1.25;
     font-weight: 900;
-    /* text-shadow: 1px 1px 1px #fff; */
 }
 
 .hero-action {
@@ -156,7 +164,6 @@
 .why-us-image img {
   border-radius: 20px;
   width: 100%;
-  /* border: 3px solid #737373; */
 }
 
 .why-us-content {
@@ -220,6 +227,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service-card-thread {
@@ -290,19 +298,50 @@
       display: block;
     }
 
+    .mobile-flex {
+      display: flex;
+    }
+
     .desktop {
       display: none;
     }
 
-    .header-section{
-      flex-direction: column;
-      align-items: center;
+    * {
       margin: 0;
+      padding: 0;
+    }
+
+    .header-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
     }
 
     .logo {
-      margin: 0;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      padding: 10px;
+      top: 5px;
+      z-index: 1;
     }
+
+    .hamburg {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      z-index: 2;
+      font-size: 3rem;
+      color: #737373;
+
+    }
+    
 
     /* Hero section */
 
@@ -320,6 +359,12 @@
 
     .why-us-section {
       margin: 0;
+    }
+
+    /* Services section */
+
+    .service-cards {
+      flex-wrap: wrap;
     }
 
 }
