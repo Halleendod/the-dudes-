@@ -14,6 +14,12 @@
 
   h2 {font-size: 2rem;}
 
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Header Section */
   
   .header-section {
@@ -196,6 +202,7 @@
 .services {
   /* background: linear-gradient(to bottom, #0097B2 0%, white 80%); */
   background-color: #E9F1FA;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
