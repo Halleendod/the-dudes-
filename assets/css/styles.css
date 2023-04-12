@@ -19,7 +19,7 @@
   .header-section {
     display: flex;
     justify-content:space-between;
-    background-color: white;
+    background-color: #E9F1FA;
     position: fixed;
     width: 100%;
     padding: 1% 0;
@@ -59,20 +59,21 @@
   }
 
   nav ul li a:hover {
-    color: #0097B2;
+    color: #00ABE4;
   }
 
-  .call-to-action {
-    background-color: #0097B2;
+  .call-to-action a {
+    text-decoration: none;
+    background-color: #00ABE4;
     padding: 15px 25px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     font-weight: bold;
     border: none;
     font-size: 1rem;
   }
 
-  .call-to-action:hover {
+  .call-to-action a:hover {
     box-shadow: 0 2px 5px grey;
   }
 
@@ -84,7 +85,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(../img/hero/glass-and-wood-exterior-design_hero_image.jpg);
+    background-color: #E9F1FA;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,7 +97,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
     border-radius: 10px;
     width: fit-content;
     height: fit-content;
@@ -106,26 +107,32 @@
 
 .hero-text {
     text-align: center;
-    color: white;
+    color: #00ABE4;
     line-height: 1.25;
-    font-weight: bold;
+    font-weight: 900;
     text-shadow: 1px 1px 1px #fff;
 }
 
-.hero-action button {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #0097B2;
-    padding: 15px 25px;
-    border-radius: 10px;
-    margin: 10% 0;
-    border: none;
+.hero-action {
+  margin-top: 50px;
 }
 
-.hero-action button:hover {
-  box-shadow: 0 2px 5px black;
+.hero-action a {
+    text-decoration: none;
+    color: #00ABE4;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #E9F1FA;
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin: 10% 0;
+    border: 2px solid #00ABE4;
+}
+
+.hero-action a:hover {
+    background-color: #00ABE4;
+    color: white;
+    border: 2px solid #00ABE4
 }
 
 /* Why us section */
@@ -172,22 +179,23 @@
   color: black;
   font-weight: bold;
   margin-top: 10%;
-  padding: 10px 25px;
-  border: 1px solid black;
-  border-radius: 10px;
+  padding: 15px 25px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
 .why-us-content a:hover {
   
   color: white;
-  background-color: #0097B2;
-  border: 1px solid #0097B2;
+  background-color: #00ABE4;
+  border: 2px solid #00ABE4;
 }
 
 /*Services Section*/
 
 .services {
-  background: linear-gradient(to bottom, #0097B2 0%, white 80%);
+  /* background: linear-gradient(to bottom, #0097B2 0%, white 80%); */
+  background-color: #E9F1FA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +205,7 @@
 
 .header-service {
   margin: 50px;
-  color: white;
+  color: #00ABE4;
 }
 
 .service-cards{
@@ -241,7 +249,9 @@
 }
 
 .service-card-name {
-  margin: 20px 0;
+  color: #737373;
+  margin: 40px 0;
+  font-size: 1.25rem;
 }
 
 .service-call-to-action {
@@ -250,13 +260,13 @@
 
 .service-call-to-action a {
   text-decoration: none;
-  background-color: white;
+  background-color: #E9F1FA;
   
-  padding: 10px 25px;
-  border-radius: 10px;
+  padding: 15px 25px;
+  border-radius: 20px;
   color: black;
   font-weight: bold;
-  border: 1px solid black;
+  border: 2px solid black;
   font-size: 1rem;
 }
 
@@ -264,5 +274,5 @@
   
   color: white;
   background-color: #0097B2;
-  border: 1px solid #0097B2;
+  border: 2px solid #0097B2;
 }
