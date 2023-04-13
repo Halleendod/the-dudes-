@@ -1,0 +1,61 @@
+:root {font-size: 16px;}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+p {font-size: 1rem;}
+
+h1 {font-size: 4rem;}
+
+h2 {font-size: 2rem;}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+
+.header-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    position: fixed;
+    padding-top: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hero-section{
+    width: 100%;
+}
+
+.why-us-section {
+    width: 100%;
+}
+
+.why-us-content {
+    width: 100%;
+}
+
+.services {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    
+}
+
+    
+
