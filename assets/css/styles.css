@@ -39,7 +39,9 @@
   }
 
   .container {
-    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
   }
 
   .logo.desktop {
@@ -310,6 +312,12 @@
       padding: 0;
     }
 
+    body.mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .header-section{
       display: flex;
       justify-content: center;
@@ -317,6 +325,7 @@
     }
 
     .container {
+      height: 75px;
       display: flex;
       justify-content: center;
     }
@@ -338,7 +347,6 @@
       z-index: 2;
       font-size: 3rem;
       color: #737373;
-
     }
     
 
@@ -352,6 +360,16 @@
 
     .hero-content{
       margin: 0;
+      padding: 0 0 50px 0;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+
+    .hero-action a {
+      background-color: var(--primary-color);
+      color: var(--background-color);
     }
 
     /* Why us section */
@@ -360,10 +378,37 @@
       margin: 0;
     }
 
+    .why-us-content {
+      width: 100%;
+      margin: 50px 20px;
+    }
+
+    .why-us-content a {
+      background-color: var(--primary-color);
+      color: white;
+      border-color: var(--primary-color);
+    }
+
     /* Services section */
+
+    .header-service h2 {
+      text-align: center;
+    }
 
     .service-cards {
       flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .service-card-image {
+      width: 200px;
+      height: 235px;
+    }
+
+    .service-call-to-action a {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+      border-color: var(--primary-color);
     }
 
 }
