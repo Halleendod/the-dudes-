@@ -121,6 +121,12 @@
     margin-right: 10%;
 }
 
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-text {
     text-align: center;
     color: var(--primary-color);
