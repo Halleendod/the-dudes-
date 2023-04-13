@@ -359,12 +359,43 @@
     .hero-section {
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      /* justify-content: center; */
     }
 
     .hero-content{
-      margin: 0;
-      padding: 0 0 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 95%;
+      height: 100vh;
+      margin: 80px 0 30px 0;
+      /* padding: 0 0 50px 0; */
+      /* border: 2px solid black; */
+      
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/whyus/3d_rendered_house_for_why_us_section.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      border: 5px solid var(--primary-color);
+    }
+
+    
+
+    .hero-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 50px 0 0 0;
+      /* border: 2px solid black; */
+      /* padding: 0 0 50px 0; */
     }
 
     .hero-text h1 {
