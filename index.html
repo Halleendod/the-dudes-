@@ -20,8 +20,8 @@
                 
             </div> <!--logo-->
     
-            <div class="nav-bar">
-                <nav class="main-menu desktop">
+            <div class="nav-bar desktop">
+                <nav class="main-menu">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Why Us</a></li>
@@ -32,19 +32,50 @@
                     </ul>
                 </nav> <!--main-menu-->
     
-                <div class="call-to-action desktop">
-                    <a href="#">Book an Appointment</a>
+                <div class="call-to-action">
+                    <a href="#">Contact us</a>
                 </div> <!--call-to-action-->
     
             </div> <!--nav-bar-->
     
-            <div class="hamburg mobile-flex mobile">
-                <i class="fa-solid fa-bars"></i>
+            <div class="hamburg mobile">
+                <button id="hamburgBtn" class="hamburgBtn"><i class="fa-solid fa-bars"></i></button>
             </div>
 
         </div> <!--container-->
         
     </header> <!--header section-->
+
+    <!--mobile menu section-->
+
+    <section id="mobile-menu-section" class="mobile-menu-section mobile hidden"> 
+
+        <div class="mobile-menu-container">
+
+            <nav class="mobile-menu">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Why us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+            </nav> <!--mobile-menu-->
+
+            <div class="call-to-action">
+                <a href="#">Contact us</a>
+            </div> <!--call-to-action-->
+
+        </div> <!--mobile-menu-container-->
+
+    </section> <!--Mobile menu section-->
+
+    <!--Seperator-->
+
+    <section id="seperator" class="seperator mobile hidden"><div class="round-seperator"></div></section>
 
     <!--Hero section-->
 
@@ -63,7 +94,7 @@
                 </div> <!--hero-text-->
     
                 <div class="hero-action">
-                    <a href="#">Send a Message</a>
+                    <a href="#">Call us Now</a>
                 </div> <!--hero-action-->
                 
             </div> <!--hero-text-container-->
@@ -154,5 +185,6 @@
 
     </section> <!--services-->
     <script src="https://kit.fontawesome.com/569015700f.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
