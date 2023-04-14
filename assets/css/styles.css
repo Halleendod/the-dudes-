@@ -12,6 +12,8 @@
 
   .desktop {display: flex;}
 
+  .desktop-hide {display: none;}
+
   p {font-size: 1rem;}
 
   h1 {font-size: 4rem;}
@@ -109,8 +111,6 @@
     background-position: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    /* border-top-left-radius: 20px inset;
-    border-top-right-radius: 20px inset; */
 }
 
 .hero-content {
@@ -302,28 +302,10 @@
 
 
 @media only screen and (max-width:600px) {
-    .mobile-block {
-      display: block;
-    }
 
-    .mobile-flex {
-      display: flex;
-    }
+    .mobile {display: flex;}
 
-    .desktop {
-      display: none;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    body.mobile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    .desktop {display: none;}
 
     .header-section{
       display: flex;
@@ -353,7 +335,7 @@
 
     .hamburg {
       position: absolute;
-      top: 15px;
+      top: 10px;
       right: 10px;
       z-index: 2;
     }
@@ -365,18 +347,17 @@
       background: none;
     }
 
+    .mobile-menu-section.hidden {height: 0;}
+
+    .seperator.hidden {display: none;}
+
     .mobile-menu-section {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* height: 500px; */
-      /* border: 1px solid black; */
     }
 
     .mobile-menu-container {
       height: 100%;
-      width: 50%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -387,11 +368,10 @@
 
     .mobile-menu {
       margin-bottom: 30px;
-      width: 100%;
+      width: 50%;
     }
 
     .mobile-menu ul {
-
       flex-direction: column;
       text-align: center;
     }
@@ -407,19 +387,17 @@
     .mobile-menu ul li a {
       color: var(--primary-color);
       font-size: 1rem;
-      
     }
 
-    .call-to-action.mobile-flex a {
+    .call-to-action.mobile a {
       font-size: 1rem;
-      padding: 10px 25px;
+      padding: 15px 25px;
     }
 
     .seperator {
       height: 20px;
       width: 100%;
       background-color: var(--secondary-color);
-      /* border: 1px solid black; */
     }
 
     .round-seperator {
