@@ -220,8 +220,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
 }
 
 .header-service {
@@ -282,7 +281,6 @@
 .service-call-to-action a {
   text-decoration: none;
   background-color: var(--secondary-color);
-  
   padding: 15px 25px;
   border-radius: 20px;
   color: var(--primary-color);
@@ -350,7 +348,7 @@
     .mobile-menu-section {
       width: 100%;
       height: 500px;
-      transition: height 1s;
+      transition: height 0.5s;
     }
 
     .mobile-menu-container {
@@ -443,12 +441,6 @@
     .why-us-content {
       width: 100%;
       margin: 50px 50px;
-    }
-
-    .why-us-content a {
-      background-color: var(--background-color);
-      color: var(--text-color);
-      border-color: var(--text-color);
     }
 
     /* Services section */
