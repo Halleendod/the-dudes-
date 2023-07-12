@@ -18,7 +18,7 @@
 
   h1 {font-size: 4rem;}
 
-  h2 {font-size: 2rem;}
+  h2 {font-size: 2.5rem; font-weight: bold;}
 
   body {
     display: flex;
@@ -40,11 +40,11 @@
     border-bottom-right-radius: 20px;
   }
 
-  .container {
+  /* .container {
     width: 80%;
     display: flex;
     justify-content:space-between;
-  }
+  } */
 
   .logo.desktop {
     margin-left:10%;
@@ -296,6 +296,107 @@
   border: 2px solid var(--primary-color);
 }
 
+/* House plans */
+
+#plan-image-1 {
+  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+}
+
+#plan-image-2 {
+  background-image: url("/assets/img/projects/3_storey_house_at_gampaha.jpg");
+}
+
+#plan-image-3 {
+  background-image: url("/assets/img/projects/3_storey_house_at_matara.jpg");
+}
+
+#plan-image-4 {
+  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+}
+
+.plan-image {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.plan h3 {
+  font-weight: bold;
+}
+
+.plan h4 {
+  font-weight: bold;
+}
+
+.plans-buy-icons {
+  width: 450px;
+  height: 325px;
+  border-radius: 20px;
+}
+
+.cart-add {
+  font-size: 3rem;
+}
+
+.heart-add {
+  font-size: 3rem;
+}
+
+.plans-buy-icons {
+  display: none;
+}
+
+.plan-image:hover .plans-buy-icons {
+  display: flex;
+}
+
+.plan-btn {
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  border-color: black;
+}
+
+/* Staff section */
+
+#staff {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
+.header-staff {
+  color: var(--primary-color);
+}
+
+.staff-card {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.staff-card img {
+  width: 300px;
+  border-radius: 35px;
+}
+
+.staff-card h5 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.staff-card p {
+  color: #737373;
+  font-weight: bold;
+}
+
+.staff-btn {
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid;
+}
 
 @media only screen and (max-width:600px) {
 
@@ -309,11 +410,11 @@
       align-items: center;
     }
 
-    .container {
+    /* .container {
       height: 60px;
       display: flex;
       justify-content: center;
-    }
+    } */
 
     .logo {
       display: flex;
@@ -458,5 +559,7 @@
       width: 200px;
       height: 235px;
     }
+
+   
 
 }
