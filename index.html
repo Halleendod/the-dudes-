@@ -16,63 +16,34 @@
     <header class="header-section">
         <div class="container">
 
-            <div class="logo">
-                <a href="#"><img src="assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="60px"></a>
-                
-            </div> <!--logo-->
-    
-            <div class="nav-bar desktop">
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Why Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav> <!--main-menu-->
-    
-                <div class="call-to-action">
-                    <a href="#">Contact us</a>
-                </div> <!--call-to-action-->
-    
-            </div> <!--nav-bar-->
-    
-            <div class="hamburg mobile">
-                <button id="hamburgBtn" class="hamburgBtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="row d-flex flex-row py-3">
+                <div class="col-2">
+                    <a href="#"><img src="assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="60px"></a>
+                </div>
+                <div class="col-10 d-flex justify-content-end align-items-center">
+                    <nav class="d-flex align-items-center">
+                        <ul class="d-flex m-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Why Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="call-to-action">
+                        <a class="call-to-action-btn btn btn-primary p-3" href="#">Contact us</a>
+                    </div>
+                    
+                </div>
             </div>
-
-        </div> <!--container-->
+        </div> 
         
     </header> <!--header section-->
 
     <!--mobile menu section-->
 
-    <section id="mobile-menu-section" class="mobile-menu-section mobile hidden"> 
 
-        <div class="mobile-menu-container">
-
-            <nav class="mobile-menu">
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Why us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-
-            </nav> <!--mobile-menu-->
-
-            <div class="call-to-action">
-                <a href="#">Contact us</a>
-            </div> <!--call-to-action-->
-
-        </div> <!--mobile-menu-container-->
-
-    </section> <!--Mobile menu section-->
 
     <!--Hero section-->
 
@@ -131,55 +102,62 @@
 
     <section class="services">
 
-        <div class="header-service"> 
-            <h2>Services We Provide</h2>
-        </div> <!--header-service-->
+        <div style="border:1px solid black" class="container mt-5">
+            <div class="row mb-5">
+                <h2 class="header-service d-flex justify-content-center">Services We Provide</h2>
+            </div>
 
-        <div class="service-cards">
-            <div class="service-card-thread">
-                <div id="design-3d" class="service-card-image">
-                    <!--<img src="assets/img/services/3d_design_service.jpg" alt="3D Design image"> -->
+            <div class="row">
+                <div class="service-thread d-flex justify-content-between">
+                    <div class="service-card">
+                        <div id="design-3d" class="service-card-image">
+                            <!--<img src="assets/img/services/3d_design_service.jpg" alt="3D Design image"> -->
+        
+                        </div> <!--service-card-image-->
+        
+                        <div class="service-card-name d-flex justify-content-center my-5">
+                            <h3>3D Design</h3>
+                        </div> <!--service-card-name-->
+                    </div>
 
-                </div> <!--service-card-image-->
-
-                <div class="service-card-name">
-                    <h3>3D Design</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="boq" class="service-card-image">
+                    <div class="service-card">
+                        <div id="boq" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div> <!--service-card-image-->
+        
+                        <div class="service-card-name d-flex justify-content-center my-5">
+                            <h3>BOQ</h3>
+                        </div> <!--service-card-name-->
+                    </div>
 
-                <div class="service-card-name">
-                    <h3>BOQ</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="vasthu" class="service-card-image">
+                    <div class="service-card">
+                        <div id="vasthu" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div> <!--service-card-image-->
+        
+                        <div class="service-card-name d-flex justify-content-center my-5">
+                            <h3>Vasthu</h3>
+                        </div> <!--service-card-name-->
+                    </div>
 
-                <div class="service-card-name">
-                    <h3>Vasthu</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="drawings" class="service-card-image">
+                    <div class="service-card">
+                        <div id="drawings" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div> <!--service-card-image-->
+        
+                        <div class="service-card-name d-flex justify-content-center my-5">
+                            <h3>Drawings</h3>
+                        </div> <!--service-card-name-->
+                    </div>
+                </div>
+            </div>
 
-                <div class="service-card-name">
-                    <h3>Drawings</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-        </div> <!--service-cards-->
-
-        <div class="service-call-to-action">
-            <a href="#">See Our Packages</a>
+            <div class="row mb-5">
+                <div class="service-call-to-action d-flex justify-content-center">
+                    <a class="btn btn-outline-primary service-btn p-3" href="#">See More Services</a>
+                </div>
+            </div>
+            
         </div>
 
     </section> <!--services-->
@@ -229,9 +207,8 @@
             
             <div class="row mt-4">
                 <div class="plan-call-to-action d-flex justify-content-center">
-                    <a class="btn btn-outline-primary plan-btn p-3" href="#">See more plans</a>
+                    <a class="btn btn-outline-primary plan-btn p-3" href="#">Shop Online</a>
                 </div>
-                
             </div>
         </div>
     </section>
