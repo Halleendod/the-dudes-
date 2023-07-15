@@ -1,0 +1,47 @@
+#shop-section {
+    margin-top: 120px;
+}
+
+.product {
+    width: 100%;
+}
+
+ .product-image {
+    background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+}
+
+.product-image.product-image button {
+    display: none;
+}
+
+.product-image:hover.product-image button {
+    display: flex;
+
+}
+
+.product-image button {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.view-btn {
+    width: 100%;
+    border-radius: 15px;
+    color:black;
+    border: 2px solid black;
+    font-weight: bold;
+}
