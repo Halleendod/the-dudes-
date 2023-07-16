@@ -2,6 +2,11 @@
     margin-top: 120px;
 }
 
+.product-card {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
 .product {
     width: 100%;
 }
