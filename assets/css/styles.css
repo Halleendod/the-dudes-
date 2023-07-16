@@ -446,8 +446,9 @@ a {
 }
 
 .staff-card img {
-  width: 300px;
-  border-radius: 35px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 40px;
 }
 
 .staff-card h5 {
@@ -461,25 +462,21 @@ a {
 }
 
 .staff-btn {
-  border-radius: 20px;
+  border-radius: 15px;
   font-weight: bold;
   border: 2px solid;
 }
 
 /* Blog section */
 
-.blog-thread {
-  width: 100%;
-}
-
 .blog-card {
-  width: 350px;
+  width: 100%;
   border-radius: 20px;
 }
 
 .blog-card img {
-  width: 350px;
-  height: 250px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
   border-radius: 20px;
 }
 
@@ -503,7 +500,7 @@ a {
 }
 
 .blog-btn {
-  border-radius: 20px;
+  border-radius: 15px;
   font-weight: bold;
   color: black;
   border-color: black;
