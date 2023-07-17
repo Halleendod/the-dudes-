@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/variables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> -->
     <title>A & A Designs</title>
 </head>
 <body>
@@ -15,63 +19,32 @@
     <header class="header-section">
         <div class="container">
 
-            <div class="logo">
-                <a href="#"><img src="assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="60px"></a>
-                
-            </div> <!--logo-->
-    
-            <div class="nav-bar desktop">
-                <nav class="main-menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Why Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav> <!--main-menu-->
-    
-                <div class="call-to-action">
-                    <a href="#">Contact us</a>
-                </div> <!--call-to-action-->
-    
-            </div> <!--nav-bar-->
-    
-            <div class="hamburg mobile">
-                <button id="hamburgBtn" class="hamburgBtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="row d-flex flex-row py-3">
+                <div class="col-2">
+                    <a href="#"><img src="assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="60px"></a>
+                </div>
+                <div class="col-10 d-flex justify-content-end align-items-center">
+                    <nav class="d-flex align-items-center">
+                        <ul class="d-flex m-0">
+                            <li class="active"><a  href="#">Home</a></li>
+                            <li><a href="/assets/pages/services.html">Services</a></li>
+                            <li><a href="/assets/pages/shop.html">Shop</a></li>
+                            <li><a href="/assets/pages/projects.html">Projects</a></li>
+                            <li><a href="/assets/pages/blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="call-to-action">
+                        <a class="call-to-action-btn btn btn-primary px-4 py-2" href="#">Call us +94-112122324</a>
+                    </div> 
+                </div>
             </div>
-
-        </div> <!--container-->
+        </div> 
         
     </header> <!--header section-->
 
     <!--mobile menu section-->
 
-    <section id="mobile-menu-section" class="mobile-menu-section mobile hidden"> 
 
-        <div class="mobile-menu-container">
-
-            <nav class="mobile-menu">
-
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Why us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-
-            </nav> <!--mobile-menu-->
-
-            <div class="call-to-action">
-                <a href="#">Contact us</a>
-            </div> <!--call-to-action-->
-
-        </div> <!--mobile-menu-container-->
-
-    </section> <!--Mobile menu section-->
 
     <!--Hero section-->
 
@@ -88,7 +61,7 @@
             <div class="hero-text-container">
 
                 <div class="hero-text">
-                    <h1>We Bring<br>Your Dream<br>Alive</h1>
+                    <h1>Dream Homes<br>Designed Perfectly</h1>
                 </div> <!--hero-text-->
     
                 <div class="hero-action">
@@ -103,85 +76,593 @@
 
     <!--Why us section-->
 
-    <section class="why-us-section">
+    <section class="why-section mt-5">
 
-        <div class="why-us-image desktop">
-            <img src="assets/img/whyus/3d_rendered_house_for_why_us_section.jpg" alt="3D rendered image of a house">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-mg-6">
+                    <div class="why-image desktop">
+                        <img class="img-fluid" src="assets/img/whyus/3d_rendered_house_for_why_us_section.jpg" alt="3D rendered image of a house">
+                    </div>
+                </div>
+                <div class="col-6 col-mg-6 why-content d-flex flex-column align-items-center">
+                    <!-- <div class="why-content"> -->
+                    <h2>Why You Should Choose Us</h2>
+        
+                    <p class="text-center fs-5 fw-bold mt-5" style="color: var(--primary-color);">
+                        Our company is dedicated to providing top-quality 3D designs, architectural drawings, structural designs, building services drawings and cost estimations that are tailored to meet the needs and preferences of our clients.</p>
+        
+                    <p class="text-center fs-5 fw-bold mt-3">
+                        We have a team of highly skilled and experienced Architects and Civil Engineers who use state-of-the-art software and tools to create stunning and realistic 3D designs and other drawings that will help you visualize your dream home.</p>
+                    <!-- </div> -->
+                </div>
+            </div>
         </div>
 
-        <div class="why-us-content">
-            <h2>Why You Should Choose Us</h2>
-
-            <p style="color: #0072B2;">Our company is dedicated to providing top-quality 3D designs, 
-                architectural drawings, structural designs, building services 
-                drawings and cost estimations that are tailored to meet the needs 
-                and preferences of our clients.</p>
-
-            <p>We have a team of highly skilled and experienced Architects and 
-                Civil Engineers who use state-of-the-art software and tools to create 
-                stunning and realistic 3D designs and other drawings that will help 
-                you visualize your dream home.</p>
-
-            <a href="#" class="why-us-link">See Qualifications</a>
-        </div>
+        
     </section> <!--why-us-section-->
 
     <!--Services Section-->
 
     <section class="services">
 
-        <div class="header-service"> 
-            <h2>Services We Provide</h2>
-        </div> <!--header-service-->
+        <div class="container my-5">
+            <div class="row mb-5">
+                <h2 class="header-service d-flex justify-content-center">Services We Provide</h2>
+            </div>
 
-        <div class="service-cards">
-            <div class="service-card-thread">
-                <div id="design-3d" class="service-card-image">
-                    <!--<img src="assets/img/services/3d_design_service.jpg" alt="3D Design image"> -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card card-body p-4">
+                        <div id="design-3d" class="service-card-image">
+        
+                        </div>
+        
+                        <div class="service-card-name d-flex justify-content-center mt-5">
+                            <h3>3D Design</h3>
+                        </div> 
+                    </div>
+                </div>
 
-                </div> <!--service-card-image-->
-
-                <div class="service-card-name">
-                    <h3>3D Design</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="boq" class="service-card-image">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card card-body p-4">
+                        <div id="boq" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div> 
+        
+                        <div class="service-card-name d-flex justify-content-center mt-5">
+                            <h3>BOQ</h3>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="service-card-name">
-                    <h3>BOQ</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="vasthu" class="service-card-image">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card card-body p-4">
+                        <div id="vasthu" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div>
+        
+                        <div class="service-card-name d-flex justify-content-center mt-5">
+                            <h3>Vasthu</h3>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="service-card-name">
-                    <h3>Vasthu</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-
-            <div class="service-card-thread">
-                <div id="drawings" class="service-card-image">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="service-card card-body p-4">
+                        <div id="drawings" class="service-card-image">
                     
-                </div> <!--service-card-image-->
+                        </div>
+        
+                        <div class="service-card-name d-flex justify-content-center mt-5">
+                            <h3>Drawings</h3>
+                        </div> 
+                    </div>
+                </div>
+            </div>
 
-                <div class="service-card-name">
-                    <h3>Drawings</h3>
-                </div> <!--service-card-name-->
-            </div> <!--service-card-thread-->
-        </div> <!--service-cards-->
-
-        <div class="service-call-to-action">
-            <a href="#">See Our Packages</a>
+            <!-- <div class="row my-5">
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-primary service-btn px-3 py-2" href="#">See More Services</a>
+                </div>
+            </div> -->
+            
         </div>
 
     </section> <!--services-->
+
+    <section class="projects">
+        <div class="container mb-5">
+            <div class="row mt-5">
+                <h2 class="d-flex justify-content-center">Previous Projects</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#">
+                        <div class="project d-flex flex-column mt-5">
+                            <img src="/assets/img/projects/5_storey_residence_at_piliyandala.jpg" alt="5_storey_residence_at_piliyandala">
+                            <h5 class="text-bold mt-3 ps-1">5 Story house at Piliyandala</h5>
+                        </div> 
+                    </a>
+                    
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#">
+                        <div class="project d-flex flex-column mt-5">
+                            <img src="/assets/img/projects/3_storey_house_at_gampaha.jpg" alt="3_storey_house_at_gampaha">
+                            <h5 class="text-bold mt-3 ps-1">3 Story house at Gampaha</h5>
+                        </div> 
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="">
+                        <div class="project d-flex flex-column mt-5">
+                            <img src="/assets/img/projects/3_storey_house_at_matara.jpg" alt="3_storey_house_at_matara">
+                            <h5 class="text-bold mt-3 ps-1">3 Story house at Matara</h5>
+                        </div> 
+                    </a>
+                    
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#">
+                        <div class="project d-flex flex-column mt-5">
+                            <img src="/assets/img/projects/5_storey_residence_at_piliyandala.jpg" alt="5_storey_residence_at_piliyandala">
+                            <h5 class="text-bold mt-3 ps-1">5 Story house at Piliyandala</h5>
+                        </div> 
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-primary projects-btn px-3 py-2" href="#">See Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="mt-5 pb-5">
+        <div class="container">
+            <div class="row mt-5">
+                <h2 class="header-testimonial d-flex justify-content-center">What Clients Say</h2>
+            </div>
+
+            <div class="row d-lg-none">
+                <div id="carouselExampleSlidesOnly" class="carousel slide my-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            
+                            <div class="col-12">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/abc_ceo.PNG" alt="">
+                                        <h4>Mr. Edward Cooray</h4>
+                                        <h6>CEO, ABC Network</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Exceptional work! This design company crafted a stunning office space that reflects our brand identity and enhances productivity. Highly recommended!"</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+  
+                        </div>
+                        <div class="carousel-item">
+                                
+                            <div class="col-12">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/home_garden_ceo.PNG" alt="">
+                                        <h4>Mr. Yazool Ifthikhar</h4>
+                                        <h6>CEO, Home Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Excellent work. This company surpassed our expectations, creating a functional and visually stunning space that wows both clients and employees. Highly impressed!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-12">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/prime_garden_md.PNG" alt="">
+                                        <h4>Ms. Devika Fernando</h4>
+                                        <h6>MD, Prime Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Thrilled with our new office design! This architectural firm delivered a space that captures our company culture and inspires our team to do their best work. Thank you!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide my-5 d-none d-lg-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/abc_ceo.PNG" alt="">
+                                        <h4>Mr. Edward Cooray</h4>
+                                        <h6>CEO, ABC Network</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Exceptional work! This design company crafted a stunning office space that reflects our brand identity and enhances productivity. Highly recommended!"</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/prime_garden_md.PNG" alt="">
+                                        <h4>Ms. Devika Fernando</h4>
+                                        <h6>MD, Prime Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Thrilled with our new office design! This architectural firm delivered a space that captures our company culture and inspires our team to do their best work. Thank you!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/home_garden_ceo.PNG" alt="">
+                                        <h4>Mr. Yazool Ifthikhar</h4>
+                                        <h6>CEO, Home Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Excellent work. This company surpassed our expectations, creating a functional and visually stunning space that wows both clients and employees. Highly impressed!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/prime_garden_md.PNG" alt="">
+                                        <h4>Ms. Devika Fernando</h4>
+                                        <h6>MD, Prime Garden</h6>   
+                                        <p><i class="fa-solid fa-quote-left"></i> Thrilled with our new office design! This architectural firm delivered a space that captures our company culture and inspires our team to do their best work. Thank you!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/home_garden_ceo.PNG" alt="">
+                                        <h4>Mr. Yazool Ifthikhar</h4>
+                                        <h6>CEO, Home Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Excellent work. This company surpassed our expectations, creating a functional and visually stunning space that wows both clients and employees. Highly impressed!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/abc_ceo.PNG" alt="">
+                                        <h4>Mr. Edward Cooray</h4>
+                                        <h6>CEO, ABC Network</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Exceptional work! This design company crafted a stunning office space that reflects our brand identity and enhances productivity. Highly recommended!"</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/home_garden_ceo.PNG" alt="">
+                                        <h4>Mr. Yazool Ifthikhar</h4>
+                                        <h6>CEO, Home Garden</h6>   
+                                        <p><i class="fa-solid fa-quote-left"></i> Excellent work. This company surpassed our expectations, creating a functional and visually stunning space that wows both clients and employees. Highly impressed!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/abc_ceo.PNG" alt="">
+                                        <h4>Mr. Edward Cooray</h4>
+                                        <h6>CEO, ABC Network</h6>   
+                                        <p><i class="fa-solid fa-quote-left"></i> Exceptional work! This design company crafted a stunning office space that reflects our brand identity and enhances productivity. Highly recommended!"</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="testimonial-card w-100 card">
+                                    <div class="card-body testimonial-card-body">
+                                        <img class="profile-img" src="/assets/img/testimonial/prime_garden_md.PNG" alt="">
+                                        <h4>Ms. Devika Fernando</h4>
+                                        <h6>MD, Prime Garden</h6>  
+                                        <p><i class="fa-solid fa-quote-left"></i> Thrilled with our new office design! This architectural firm delivered a space that captures our company culture and inspires our team to do their best work. Thank you!</p>
+                                        <img class="rating-img" src="/assets/img/projects/5-star-rating.svg"   alt="5 Star ratings">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section mt-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="d-flex justify-content-center">Instant Home Plans</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <a href="#">
+                        <div class="product-card">
+                            <div class="product d-flex flex-column p-3">
+                                <div id="image-1-1" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <h5 class="text-bold mt-3 ps-1">5 Story building design</h5>
+                                <h6 class="text-bold mt-1 ps-1">Office building</h6>
+                                <h6 class="text-bold mt-1 ps-1">5,550 sqft</h6>
+                                <span class="mt-1 ps-1">Rs.425,000.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" alt="5 Star ratings">
+                            </div> 
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <a href="#">
+                        <div class="product-card">
+                            <div class="product d-flex flex-column p-3">
+                                <div id="image-1-2" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <h5 class="text-bold mt-3 ps-1">3 Story house plan</h5>
+                                <h6 class="text-bold mt-1 ps-1">8 Bedrooms / 5 Bathrooms</h6>
+                                <h6 class="text-bold mt-1 ps-1">2,100 sqft</h6>
+                                <span class="mt-1 ps-1">Rs.215,000.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" alt="5 Star ratings">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <a href="#">
+                        <div class="product-card">
+                            <div class="product d-flex flex-column p-3">
+                                <div id="image-1-3" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <h5 class="text-bold mt-3 ps-1">3 Story house plan</h5>
+                                <h6 class="text-bold mt-1 ps-1">8 Bedrooms / 5 Bathrooms</h6>
+                                <h6 class="text-bold mt-1 ps-1">2,250 sqft</h6>
+                                <span class="mt-1 ps-1">Rs.250,000.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" alt="5 Star ratings">
+                            </div>  
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <a href="#">
+                        <div class="product-card">
+                            <div class="product d-flex flex-column p-3">
+                                <div id="image-1-4" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <h5 class="text-bold mt-3 ps-1">5 Story building design for office</h5>
+                                <h6 class="text-bold mt-1 ps-1">8 Bedrooms / 5 Bathrooms</h6>
+                                <h6 class="text-bold mt-1 ps-1">5,550 sqft</h6>
+                                <span class="mt-1 ps-1">Rs.20,000.00</span>
+                                <img class="mt-2" src="/assets/img/projects/5-star-rating.svg" alt="5 Star ratings">
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+  
+            </div>
+            
+            <div class="row my-5">
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-primary product-btn px-3 py-2" href="#">Visit Store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="staff" class="staff-section">
+        <div class="container">
+            <div class="row mt-5">
+                <h2 class="d-flex justify-content-center header-staff">Our Strength</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="staff-card d-flex flex-column justify-content-center align-items-center">
+                        <img class="p-4" src="/assets/img/staff/managing_director.jpg" alt="MD">
+                        <h5 class="">Mr. Arjuna Vithana</h5>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="staff-card d-flex flex-column justify-content-center align-items-center">
+                        <img class="p-4" src="/assets/img/staff/civil_engineer.jpg" alt="MD">
+                        <h5 class="">Eng. Shane McCallum</h5>
+                        <p>Charted Civil Engineer</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="staff-card d-flex flex-column justify-content-center align-items-center">
+                        <img class="p-4" src="/assets/img/staff/mep_engineer.jpg" alt="MD">
+                        <h5 class="">Ms. Anjalee Perera</h5>
+                        <p>Charted Architect</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                    <div class="staff-card d-flex flex-column justify-content-center align-items-center">
+                        <img class="p-4" src="/assets/img/staff/architect.jpg" alt="MD">
+                        <h5 class="">Eng. Chamal Jayasuriya</h5>
+                        <p>Charted MEP Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="staff-call-to-action d-flex justify-content-center">
+                    <a class="btn btn-outline-primary staff-btn px-3 py-2" href="#">More About Us <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section mt-5" id="blog">
+        <div class="container">
+            <div class="row ">
+                <h2 class="d-flex justify-content-center header-blog">Blog</h2>
+            </div>
+            <div class="row blog-row">
+
+                <div class="col-12 col-lg-4 mt-5">
+                    <a href="#">
+                        <div class="blog-card">
+                            <img src="/assets/img/blog/10_benifits_of_making_3d_designs.jpeg" alt="">
+                            <h5 class="mt-3 px-1">10 benifits of making 3D designs before construction</h5>
+                            <p class="mt-3 px-1">In the realm of architectural design, the utilization of 3D technology has revolutionized the way projects are visualized and executed. <a class="read-more" href="#">Read more..</a></p>
+                            <span class="mb-3 px-1"><i class="fa-regular fa-calendar"></i> 15th March 2023</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-4 mt-5">
+                    <a href="#">
+                        <div class="blog-card">
+                            <img src="/assets/img/blog/15_new_design_ideas.png" alt="">
+                            <h5 class="mt-3 px-1">15 new design ideas for 2 story houses</h5>
+                            <p class="mt-3 px-1">Two-story houses provide ample space for families, allowing for functional separation between living and private areas. Whether you're <a class="read-more" href="#">Read more..</a></p>
+                            <span class="mb-3 px-1"><i class="fa-regular fa-calendar"></i> 08th February 2023</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-4 mt-5">
+                    <a href="#">
+                        <div class="blog-card">
+                            <img src="/assets/img/blog/13_ideas_to_reduce_the_cost.jpg" alt="">
+                            <h5 class="mt-3 px-1">13 ideas to reduce the cost of house construction</h5>
+                            <p class="mt-3 px-1">Building a house is a significant financial undertaking, and finding ways to reduce construction costs can make a substantial differ <a class="read-more" href="#">Read more..</a></p>
+                            <span class="mb-3 px-1"><i class="fa-regular fa-calendar"></i> 01st January 2023</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="blog-call-to-action d-flex justify-content-center">
+                    <a class="btn btn-outline-primary blog-btn px-3 py-2" href="#">Visit Blog <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <div class="footer-contacts">
+                        <h3>Quick Contacts</h3>
+                        <h4 class="mt-3">Phone</h4>
+                        <span>(+94) 777 658 741 (Whatsapp)<br></span>
+                        <span>(+94) 777 658 742 (Whatsapp)</span>
+                        <h4 class="mt-3">Address</h4>
+                        <span>No. 21,<br>Galle Road,<br>Colombo 03.</span>
+                        <h4 class="mt-3">E-mail</h4>
+                        <span>contact@aandadesigns.lk</span>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <div class="map mt-2">
+                        <img src="/assets/img/footer/location_embed_map.PNG" alt="location map">
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <div class="right-col ms-5 ps-5">
+                        <div class="social-media">
+                            <div class="row">
+                                <h3>Social Media</h3>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="social-icons d-flex">
+                                    <a class="me-3" href="#"><div id="facebook"></div></a>
+                                    <a class="me-3" href="#"><div id="instagram"></div></a>
+                                    <a class="me-3" href="#"><div id="linkedin"></div></a>
+                                    <a class="me-3" href="#"><div id="youtube"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quick-links mt-4">
+                            <div class="row">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="row mt-1">
+                                <a class="mt-1" href="#">Privacy Policy</a>
+                                <a class="mt-1" href="#">Disclaimer</a>
+                                <a class="mt-1" href="#">Terms and Conditions</a>
+                                <a class="mt-1" href="#">About Us</a>
+                                <a class="mt-1" href="#">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="rights d-flex justify-content-center my-3">
+                    <span>Ⓒ A&A Designs Pvt Ltd. All Rights Reserved</span>
+                </div>   
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/569015700f.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
