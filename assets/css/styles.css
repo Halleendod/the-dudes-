@@ -1,11 +1,12 @@
-:root {font-size: 16px;}
+:root {font-size: 14px;}
 
 /* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
   }
 
   .mobile {display: none;}
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--background-color);
   }
 
   section {
@@ -42,9 +44,9 @@
   header {
     width: 100%;
     position: fixed;
-    background-color: var(--secondary-color);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color: white;
+    /* border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px; */
     z-index: 99;
   }
 
@@ -114,8 +116,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
 }
 
 .hero-content {
@@ -225,12 +227,12 @@
 /*Services Section*/
 
 .services {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
+  align-items: center; */
+  /* border-radius: 75px; */
 }
 
 .header-service {
@@ -239,8 +241,10 @@
 
 .service-card{
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: white;
+  border-radius: 20px;
 }
 
 #design-3d {
@@ -261,25 +265,21 @@
 
 .service-card-image {
   width: 100%;
-  aspect-ratio: 2 /2;
+  aspect-ratio: 1 / 1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
-}
-
-.service-card-name {
-  color: var(--primary-color);
-  font-weight: bold;
+  border-radius: 15px;
 }
 
 .service-card-name h3 {
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 .service-btn {
   color: var(--primary-color);
-  border-radius: 20px;
+  border-radius: 15px;
   font-weight: bold;
   border: 2px solid var(--primary-color);
   
@@ -302,10 +302,18 @@ a {
   font-weight: bold;
 }
 
+.projects-btn {
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
 /* Testimonials */
 
 #testimonial {
-  background-color: var(--secondary-color);
+  background-color: #F2F2F2;
+  border-radius: 0px;
 }
 
 .header-testimonial {
@@ -421,19 +429,19 @@ a {
   width: 40%;
 }
 
-.plan-btn {
+.product-btn {
   border-radius: 15px;
   font-weight: bold;
   color: black;
-  border-color: black;
+  border: 2px solid black;
 } 
 
 /* Staff section */
 
 #staff {
   width: 100%;
-  background-color: var(--secondary-color);
-  border-radius: 20px;
+  background-color: #F2F2F2;
+  /* border-radius: 100px; */
 }
 
 .header-staff {
@@ -486,12 +494,14 @@ a {
 
 .blog-card p {
   font-size: 0.9rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #737373;
+  
 }
 
-.blog-card a {
+.blog-card .read-more {
   font-size: 0.9rem;
+  color: var(--primary-color);
 }
 
 .blog-card span {
@@ -503,7 +513,7 @@ a {
   border-radius: 15px;
   font-weight: bold;
   color: black;
-  border-color: black;
+  border: 2px solid black;
 }
 
 /* Footer section */
@@ -511,8 +521,8 @@ a {
 footer {
   width: 100%;
   background-color: #313131;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 100px;
+  border-top-right-radius: 100px; */
 }
 
 .footer-contacts {
