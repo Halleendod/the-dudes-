@@ -21,13 +21,13 @@
 
   h1 {font-size: 4rem;}
 
-  h2 {font-size: 1.7rem; }
+  h2 {font-size: 2rem; }
 
-  h3 {font-size: 1.5rem}
+  h3 {font-size: 1.7rem}
 
-  h4 {font-size: 1.3rem; font-weight: 600;}
+  h4 {font-size: 1.5rem; font-weight: 600;}
   
-  h5 {font-size: 1rem; font-weight: 600;}
+  h5 {font-size: 1.3rem; font-weight: 600;}
 
   h6 {font-size: 1rem; font-weight: 600;}
 
@@ -36,6 +36,10 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--background-color);
+  }
+
+  .active {
+    color: var(--primary-color);
   }
 
   section {
@@ -351,13 +355,13 @@ a {
 
 .des p {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #737373;
 }
 
 .project-features i {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-right: 2px solid #737373;
   color: #737373;
 }
@@ -528,7 +532,7 @@ a {
 .product-btn {
   border-radius: 15px;
   font-weight: 600;
-  color: black;
+  color: var(--primary-color);
   /* border: 2px solid black; */
   border: none;
 }
@@ -556,6 +560,26 @@ a {
 
 .large-product-img:hover  .large-product-img-content {
   display: block;
+}
+
+/* Custom design */
+
+#custom-design {
+  background-color: white;
+}
+
+.custom-design-btn {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+}
+
+.custom-design-btn:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 
 /* Staff section */
