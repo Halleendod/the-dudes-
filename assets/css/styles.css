@@ -1,13 +1,15 @@
-:root {font-size: 14px;}
+:root {font-size: 16px;}
 
 /* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
   }
+
+  .border {border: 2px solid red;}
 
   .mobile {display: none;}
 
@@ -19,7 +21,15 @@
 
   h1 {font-size: 4rem;}
 
-  h2 {font-size: 2.5rem; font-weight: bold;}
+  h2 {font-size: 1.7rem; }
+
+  h3 {font-size: 1.5rem}
+
+  h4 {font-size: 1.3rem; font-weight: 600;}
+  
+  h5 {font-size: 1rem; font-weight: 600;}
+
+  h6 {font-size: 1rem; font-weight: 600;}
 
   body {
     display: flex;
@@ -30,6 +40,11 @@
 
   section {
     width: 100%;
+  }
+
+  img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(70%);
   }
 
   /* Header Section */
@@ -287,6 +302,14 @@
 
 /* Previous Projects */
 
+.project-image img {
+  border-radius: 20px;
+}
+
+.project-des h3 {
+  text-align: center;
+}
+
 .project img {
   border-radius: 15px;
   aspect-ratio: 3 / 2;
@@ -298,9 +321,50 @@ a {
   
 }
 
-.project h5 {
-  font-weight: bold;
+.project-features {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* .project-features .card-body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+} */
+
+.project-features .wrap-content {
+  display: flex;
+  align-items: center;
+  border: 1px solid #737373;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project-des p {
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.des p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #737373;
+}
+
+.project-features i {
+  font-size: 1.5rem;
+  border-right: 2px solid #737373;
+  color: #737373;
+}
+
+/* .project h5 {
+  font-weight: bold;
+} */
 
 .projects-btn {
   color: black;
@@ -312,13 +376,13 @@ a {
 /* Testimonials */
 
 #testimonial {
-  background-color: #F2F2F2;
+  /* background-color: #dfdfdf; */
   border-radius: 0px;
 }
 
-.header-testimonial {
+/* .header-testimonial {
   color: var(--primary-color);
-}
+} */
 
 .testimonial-card {
   border-radius: 20px;
@@ -334,20 +398,21 @@ a {
   width: 40%;
   border-radius: 50%;
   border: 5px solid var(--secondary-color);
+  /* border: 5px solid #737373; */
 }
 
  .testimonial-card-body h4 {
-  margin-top: 10px;
-  font-weight: bold;
-  color: var(--primary-color);
+  margin-top: 20px;
+  /* font-weight: bold; */
+  /* color: var(--primary-color); */
   
 }
 
  .testimonial-card-body h6 {
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* color: #737373; */
-  /* color: var(--primary-color); */
+  color: #737373;
 }
 
  .testimonial-card-body p {
@@ -358,7 +423,7 @@ a {
 
  .testimonial-card-body i {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: #737373;
 }
 
  .testimonial-card-body .rating-img {
@@ -367,6 +432,11 @@ a {
 }
 
 /* House plans */
+
+.product-link:hover .product-card {
+  border: 2px solid #DFDFDF;
+  box-shadow: #737373 ;
+}
 
 .product-card {
   background-color: #F2F2F2;
@@ -413,7 +483,7 @@ a {
 }
 
 .product-image button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
@@ -421,9 +491,9 @@ a {
   background-color: rgba(0,0,0,0.5);
 }
 
-.text-bold {
+/* .text-bold {
   font-weight: bold;
-}
+} */
 
 .product img {
   width: 40%;
@@ -431,48 +501,91 @@ a {
 
 .product-btn {
   border-radius: 15px;
-  font-weight: bold;
+  font-weight: 600;
   color: black;
-  border: 2px solid black;
-} 
+  /* border: 2px solid black; */
+  border: none;
+}
+
+#large-product-img {
+  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+}
+
+.large-product-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.large-product-img-content {
+  width: 40%;
+  background-color: white;
+  border-radius: 15px;
+  display: none;
+  /* opacity: 0.5; */
+}
+
+.large-product-img:hover  .large-product-img-content {
+  display: block;
+}
 
 /* Staff section */
 
 #staff {
   width: 100%;
-  background-color: #F2F2F2;
+  /* background-color: #dfdfdf; */
   /* border-radius: 100px; */
 }
 
-.header-staff {
-  color: var(--primary-color);
-}
+/* .header-staff {
+  /* color: var(--primary-color); 
+  /* color: #737373; 
+} */
 
 .staff-card {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 20px;
 }
 
 .staff-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 40px;
+  border-radius: 15px;
+}
+
+.staff-card i {
+  margin-top: -25px;
+  border: 2px solid #737373;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #737373;
+  z-index: 999;
 }
 
 .staff-card h5 {
-  color: var(--primary-color);
-  font-weight: bold;
+  /* color: var(--primary-color); */
+  font-weight: 500;
 }
 
 .staff-card p {
   color: #737373;
-  font-weight: bold;
+  font-weight: 500;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .staff-btn {
   border-radius: 15px;
-  font-weight: bold;
-  border: 2px solid;
+  font-weight: 600;
+  color: var(--primary-color);
+  /* border: 2px solid; */
+  border: none;
 }
 
 /* Blog section */
@@ -488,9 +601,9 @@ a {
   border-radius: 20px;
 }
 
-.blog-card h5 {
+/* .blog-card h5 {
   font-weight: bold;
-}
+} */
 
 .blog-card p {
   font-size: 0.9rem;
@@ -511,9 +624,10 @@ a {
 
 .blog-btn {
   border-radius: 15px;
-  font-weight: bold;
-  color: black;
-  border: 2px solid black;
+  font-weight: 600;
+  color: var(--primary-color);
+  /* border: 2px solid black; */
+  border: none;
 }
 
 /* Footer section */
