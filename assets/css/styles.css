@@ -431,6 +431,32 @@ a {
   margin: 10px;
 }
 
+#trusted-brands {
+  background-color: var(--primary-color);
+}
+
+#trusted-brands h2 {
+  color: white;
+}
+
+#trusted-brands .card {
+  width: 80%;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+#trusted-brands img {
+  width: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* object-fit: cover; */
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+}
+
 /* House plans */
 
 .product-link:hover .product-card {
