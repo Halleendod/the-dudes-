@@ -1,4 +1,4 @@
-:root {font-size: 16px;}
+:root {font-size: 17px;}
 
 /* CSS Reset */
 * {
@@ -135,8 +135,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom-left-radius: 75px;
-    border-bottom-right-radius: 75px;
 }
 
 .hero-content {
@@ -185,65 +183,57 @@
 
 /* Why us section */
 
-.why-image img {
+.why-content {
   border-radius: 20px;
-  width: auto;
 }
 
-.why-us-section {
-  margin: 5% 10%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.why-us-image {
-  width: 41%;
-}
-
-.why-us-image img {
-  border-radius: 20px;
-  width: 100%;
-}
-
-.why-us-content {
-  width: 40%;
+.why-content .card-header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.why-us-content h2 {
-  text-align: center;
+.why-content .card-header i {
+  font-size: 3rem;
+  color: var(--primary-color);
 }
 
-.why-us-content p {
-  font-weight: bold;
-  margin-top: 5%;
-  font-size: 1.1rem;
-  text-align: center;
-  line-height: 2;
+.why-content .card-body p {
+  display: flex;
+  justify-content: center;
 }
 
-.why-us-content a {
-  text-align: center;
-  text-decoration: none;
-  width: fit-content;
-  color: var(--text-color);
-  font-weight: bold;
-  margin-top: 10%;
-  padding: 15px 25px;
-  border: 2px solid var(--text-color);
-  border-radius: 20px;
+/* Services section */
+
+#services-section img {
+  border-radius: 15px;
 }
 
-.why-us-content a:hover {
-  
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+.services-symbol {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
 }
 
-/*Services Section*/
+.services-symbol i {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.services-symbol p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+/*Services Section old*/
 
 .services {
   /* background-color: var(--secondary-color); */
@@ -363,7 +353,7 @@ a {
 .project-features i {
   font-size: 1.7rem;
   border-right: 2px solid #737373;
-  color: #737373;
+  color: var(--primary-color);
 }
 
 /* .project h5 {
@@ -615,7 +605,7 @@ a {
   margin-bottom: 15px;
   font-size: 1.5rem;
   color: #737373;
-  z-index: 999;
+  z-index: 1;
 }
 
 .staff-card h5 {
