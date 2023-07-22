@@ -63,7 +63,7 @@
   header {
     width: 100%;
     position: fixed;
-    background-color: white;
+    background-color: #F2F2F2;
     /* border-bottom-left-radius: 75px;
     border-bottom-right-radius: 75px; */
     z-index: 99;
@@ -131,7 +131,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .hero-content {
@@ -160,7 +160,7 @@
 }
 
 .hero-services span {
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: 600;
 }
 
