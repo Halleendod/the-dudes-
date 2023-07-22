@@ -21,7 +21,7 @@
 
   h1 {font-size: 4rem;}
 
-  h2 {font-size: 2rem; }
+  h2 {font-size: 2.2rem; }
 
   h3 {font-size: 1.7rem}
 
@@ -126,24 +126,20 @@
   /* Hero Section */
 
 .hero-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: var(--secondary-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
-    margin-right: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
 }
 
 .hero-text-container {
@@ -152,32 +148,41 @@
   align-items: center;
 }
 
-.hero-text {
+.hero-text h1 {
     text-align: center;
     color: var(--primary-color);
     line-height: 1.25;
-    font-weight: 900;
+    font-weight: 700;
 }
 
-.hero-action {
-  margin-top: 50px;
+.hero-services {
+  color: var(--primary-color);
 }
+
+.hero-services span {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+/* .hero-action {
+  margin-top: 50px;
+} */
 
 .hero-action a {
-    text-decoration: none;
-    color: var(--primary-color);
+    /* text-decoration: none; */
+    color: white;
     font-size: 1rem;
     font-weight: bold;
-    background-color: var(--secondary-color);
-    padding: 15px 25px;
-    border-radius: 20px;
-    margin: 10% 0;
-    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    /* padding: 15px 25px; */
+    border-radius: 15px;
+    /* margin: 10% 0; */
+    /* border: 2px solid var(--primary-color); */
 }
 
 .hero-action a:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
     border: 2px solid var(--primary-color)
 }
 
@@ -598,13 +603,13 @@ a {
 
 .staff-card i {
   margin-top: -25px;
-  border: 2px solid #737373;
+  border: 2px solid var(--primary-color);
   border-radius: 50%;
   padding: 0.5rem;
   background-color: white;
   margin-bottom: 15px;
   font-size: 1.5rem;
-  color: #737373;
+  color: var(--primary-color);
   z-index: 1;
 }
 
