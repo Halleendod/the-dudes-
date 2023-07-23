@@ -20,7 +20,7 @@
 } */
 
 .product {
-    width: 100%;
+    width: 310px;
     border-radius: 15px;
 }
 
@@ -105,13 +105,5 @@
 }
 
 .text-bold {
-    font-weight: bold;
-}
-
-.view-btn {
-    width: 100%;
-    border-radius: 15px;
-    color:black;
-    border: 2px solid black;
     font-weight: bold;
 }

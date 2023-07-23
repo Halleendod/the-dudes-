@@ -53,19 +53,20 @@
             <div class="row">
                 <div class="col-3">
                     <div class="tabs d-flex flex-column mt-5">
-                        <button class="btn btn-outline-primary">all</button>
-                        <button class="btn btn-outline-primary">Sale</button>
-                        <div class="form-group">
+                        <h5>Filter</h5>
+                        <button id="all-btn" class="btn on btn-primary mt-3">All</button>
+                        <button id="sale-btn" class="btn off btn-outline-primary mt-3">Sale</button>
+                        <div class="form-group mt-3">
                             <label for="story">Stories</label>
                             <input id="story" class="form-control" type="number" name="story">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mt-3">
                             <label for="bedroom">Bedrooms</label>
                             <input id="bedroom" class="form-control" type="number" name="bedroom">
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group mt-3">
                             <label for="bathroom">Bathrooms</label>
                             <input id="bathroom" class="form-control" type="number" name="bathroom">
                         </div>
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div class="col-9">
-                    <div class="row d-flex justify-content-between">
+                    <!-- <div class="row d-flex justify-content-between">
                         <div class="col-12 col-md-6 col-xl-4">
                             <a href="#">
                                 <div class="product card d-flex flex-column mt-5 p-3">
@@ -236,6 +237,154 @@
                                 </div>
                             </a>
                         </div> 
+                    </div> -->
+
+                    <div class="row d-flex justify-content-between flex-wrap mt-4">
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-1-1" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #101</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-1-2" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #102</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-1-3" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #103</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-2-1" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount"></div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #105</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-2-2" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount"></div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #106</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-2-3" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount"></div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #107</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-3-1" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="area text-bold mt-3 ps-1">2 Story House Plan #101</h5>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#">
+                            <div class=" card-body d-flex flex-column">
+                                <div id="image-3-2" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #102</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
+                        <a class="product m-2 p-0 card mt-4 d-flex" href="#" href="#">
+                            <div class="card-body d-flex flex-column">
+                                <div id="image-3-3" class="product-image d-flex justify-content-center align-items-center">                          
+                                    <button href="#" class="btn btn-outline-primary py-2 me-4"><i class="fa-solid fa-cart-plus"></i></button>
+                                    <button href="#" class="btn btn-outline-primary py-2 ms-4"><i class="fa-regular fa-heart"></i></button>
+                                </div>
+                                <div class="discount">10%</div>
+                                <h5 class="text-bold mt-3 ps-1">2 Story House Plan #103</h5>
+                                <span class="area text-bold mt-1 ps-1"><i class="fa-solid fa-house"></i> 2,550 sqft</span>
+                                <span class="bedroom text-bold mt-1 ps-1"><i class="fa-solid fa-bed"></i> 3 bedrooms</span>
+                                <span class="bathroom text-bold mt-1 ps-1"><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
+                                <span class="text-bold mt-1 ps-1"><i class="fa-solid fa-tags"></i> <s>Rs.225,000.00</s> Rs. 202,500.00</span>
+                                <img class="my-2" src="/assets/img/projects/5-star-rating.svg" width="50%" alt="5 Star ratings">
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>  
