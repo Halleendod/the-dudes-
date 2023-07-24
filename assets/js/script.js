@@ -1,11 +1,11 @@
-const menuBtn = document.getElementById("hamburgBtn");
-const mobileMenu = document.getElementById("mobile-menu-section")
+// const menuBtn = document.getElementById("hamburgBtn");
+// const mobileMenu = document.getElementById("mobile-menu-section")
 
-menuBtn.addEventListener("click", ()=>{
-    mobileMenu.classList.toggle("hidden");
+// menuBtn.addEventListener("click", ()=>{
+//     mobileMenu.classList.toggle("hidden");
 
-    if (!mobileMenu.classList.contains("hidden")){
+//     if (!mobileMenu.classList.contains("hidden")){
 
-        menuBtn.style.color = "#00ABE4";
-    } else {menuBtn.style.color = "#737373";}
-});
+//         menuBtn.style.color = "#00ABE4";
+//     } else {menuBtn.style.color = "#737373";}
+// });
