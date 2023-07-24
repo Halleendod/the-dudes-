@@ -36,17 +36,6 @@
     color: red;
 }
 
-.discount {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: red;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    color: white;
-    font-weight: 600;
-}
-
 #image-1-1 {
     background-image: url("/assets/img/shop/image-1-1.jpeg");
 }
