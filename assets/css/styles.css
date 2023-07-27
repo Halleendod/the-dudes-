@@ -650,6 +650,10 @@ a {
   font-weight: bold;
 } */
 
+.blog-card h5 {
+  text-transform: capitalize;
+}
+
 .blog-card p {
   font-size: 0.9rem;
   /* font-weight: bold; */
