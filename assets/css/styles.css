@@ -50,10 +50,10 @@
     width: 100%;
   }
 
-  img:hover {
+  /* img:hover {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%);
-  }
+   /* filter: grayscale(70%);
+  } */
 
   /* Header Section */
   
@@ -193,6 +193,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .why-content .card-header i {
