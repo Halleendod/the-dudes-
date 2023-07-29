@@ -57,38 +57,13 @@
 
   /* Header Section */
   
-  /* .header-section {
-    background-color: var(--secondary-color);
-    position: fixed;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  } */
-
   header {
     width: 100%;
     position: fixed;
     background-color: #F2F2F2;
-    /* border-bottom-left-radius: 75px;
-    border-bottom-right-radius: 75px; */
     z-index: 99;
   }
 
-  /* .container {
-    width: 1320px;
-  } */
-
-  /*.logo.desktop {
-    margin-left:10%;
-  }
-
-  .nav-bar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-  }
-
-*/
   nav ul {
     list-style: none;
     display: flex;
@@ -168,20 +143,13 @@
   font-weight: 600;
 }
 
-/* .hero-action {
-  margin-top: 50px;
-} */
-
 .hero-action a {
-    /* text-decoration: none; */
     color: white;
     font-size: 1rem;
     font-weight: bold;
     background-color: var(--primary-color);
-    /* padding: 15px 25px; */
     border-radius: 15px;
-    /* margin: 10% 0; */
-    /* border: 2px solid var(--primary-color); */
+    border: 2px solid var(--primary-color)
 }
 
 .hero-action a:hover {
@@ -201,6 +169,8 @@
   font-size: 1.5rem;
   color: #007EFF;
 }
+
+/* Banner image section */
 
 .banner-img {
   background-image: url("/assets/img/hero/post-hero-image.jpg");
@@ -267,12 +237,7 @@
 /*Services Section old*/
 
 .services {
-  /* background-color: var(--secondary-color); */
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* border-radius: 75px; */
 }
 
 .header-service {
@@ -281,8 +246,6 @@
 
 .service-card{
   width: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
   background-color: white;
   border-radius: 20px;
 }
@@ -353,13 +316,6 @@ a {
   justify-content: center;
 }
 
-/* .project-features .card-body{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-} */
-
 .project-features .wrap-content {
   display: flex;
   align-items: center;
@@ -387,10 +343,6 @@ a {
   color: var(--primary-color);
 }
 
-/* .project h5 {
-  font-weight: bold;
-} */
-
 .projects-btn {
   color: black;
   font-weight: bold;
@@ -401,13 +353,8 @@ a {
 /* Testimonials */
 
 #testimonial {
-  /* background-color: #dfdfdf; */
   border-radius: 0px;
 }
-
-/* .header-testimonial {
-  color: var(--primary-color);
-} */
 
 .testimonial-card {
   border-radius: 20px;
@@ -423,27 +370,20 @@ a {
   width: 40%;
   border-radius: 50%;
   border: 5px solid var(--secondary-color);
-  /* border: 5px solid #737373; */
 }
 
  .testimonial-card-body h4 {
   margin-top: 20px;
-  /* font-weight: bold; */
-  /* color: var(--primary-color); */
-  
 }
 
  .testimonial-card-body h6 {
   font-style: italic;
-  /* font-weight: bold; */
-  /* color: #737373; */
   color: #737373;
 }
 
  .testimonial-card-body p {
   margin-top: 5px;
   text-align: center;
-  /* font-weight: bold; */
 }
 
  .testimonial-card-body i {
@@ -474,7 +414,6 @@ a {
   width: 150px;
   margin-left: 5px;
   margin-right: 5px;
-  /* object-fit: cover; */
 }
 
 .wrap-logo {
@@ -550,7 +489,6 @@ a {
   border-radius: 15px;
   font-weight: 600;
   color: var(--primary-color);
-  /* border: 2px solid black; */
   border: none;
 }
 
@@ -572,7 +510,6 @@ a {
   background-color: white;
   border-radius: 15px;
   display: none;
-  /* opacity: 0.5; */
 }
 
 .large-product-img:hover  .large-product-img-content {
@@ -603,17 +540,9 @@ a {
 
 #staff {
   width: 100%;
-  /* background-color: #dfdfdf; */
-  /* border-radius: 100px; */
 }
 
-/* .header-staff {
-  /* color: var(--primary-color); 
-  /* color: #737373; 
-} */
-
 .staff-card {
-  /* background-color: white; */
   border-radius: 20px;
 }
 
@@ -636,7 +565,6 @@ a {
 }
 
 .staff-card h5 {
-  /* color: var(--primary-color); */
   font-weight: 500;
 }
 
@@ -651,7 +579,6 @@ a {
   border-radius: 15px;
   font-weight: 600;
   color: var(--primary-color);
-  /* border: 2px solid; */
   border: none;
 }
 
@@ -668,17 +595,12 @@ a {
   border-radius: 20px;
 }
 
-/* .blog-card h5 {
-  font-weight: bold;
-} */
-
 .blog-card h5 {
   text-transform: capitalize;
 }
 
 .blog-card p {
   font-size: 0.9rem;
-  /* font-weight: bold; */
   color: #737373;
   
 }
@@ -697,7 +619,6 @@ a {
   border-radius: 15px;
   font-weight: 600;
   color: var(--primary-color);
-  /* border: 2px solid black; */
   border: none;
 }
 
@@ -706,8 +627,6 @@ a {
 footer {
   width: 100%;
   background-color: #313131;
-  /* border-top-left-radius: 100px;
-  border-top-right-radius: 100px; */
 }
 
 .footer-contacts {
