@@ -190,6 +190,28 @@
     border: 2px solid var(--primary-color)
 }
 
+.service-signs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.service-signs i {
+  font-size: 1.5rem;
+  color: #007EFF;
+}
+
+.banner-img {
+  background-image: url("/assets/img/hero/post-hero-image.jpg");
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
 /* Why us section */
 
 .why-content {
