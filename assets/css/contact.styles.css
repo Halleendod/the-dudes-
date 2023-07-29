@@ -1,3 +1,8 @@
+.call-to-action-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 #contact-content {
     margin-top: 75px;
 }

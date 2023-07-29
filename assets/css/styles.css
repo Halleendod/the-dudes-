@@ -2,105 +2,111 @@
 
 /* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
-  .border {border: 2px solid red;}
+.border {border: 2px solid red;}
 
-  .mobile {display: none;}
+.mobile {display: none;}
 
-  .desktop {display: flex;}
+.desktop {display: flex;}
 
-  .desktop-hide {display: none;}
+.desktop-hide {display: none;}
 
-  p {font-size: 1rem;}
+p {font-size: 1rem;}
 
-  h1 {font-size: 4rem;}
+h1 {font-size: 4rem;}
 
-  h2 {font-size: 2.2rem; }
+h2 {font-size: 2.2rem; }
 
-  h3 {font-size: 1.7rem}
+h3 {font-size: 1.7rem}
 
-  h4 {font-size: 1.5rem; font-weight: 600;}
-  
-  h5 {font-size: 1.3rem; font-weight: 600;}
+h4 {font-size: 1.5rem; font-weight: 600;}
 
-  h6 {font-size: 1rem; font-weight: 600;}
+h5 {font-size: 1.3rem; font-weight: 600;}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--background-color);
-  }
+h6 {font-size: 1rem; font-weight: 600;}
 
-  .active {
-    color: var(--primary-color);
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: var(--primary-color);
+}
 
 .text-bold {
   font-weight: bold;
 }
 
-  section {
-    width: 100%;
-  }
+section {
+  width: 100%;
+}
 
-  /* img:hover {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-   /* filter: grayscale(70%);
-  } */
+.underline {
+  width: 50px;
+  height: 5px;
+  background-color: var(--secondary-color);
+}
 
-  /* Header Section */
-  
-  header {
-    width: 100%;
-    position: fixed;
-    background-color: #F2F2F2;
-    z-index: 99;
-  }
+/* Header Section */
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin: 0 20px;
-  }
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #F2F2F2;
+  z-index: 99;
+}
 
-  nav ul li:last-child {
-    margin-right: 40px;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
 
-  nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-  }
+nav ul li {
+  margin: 0 20px;
+}
 
-  nav ul li a:hover {
-    color: var(--primary-color);
-  }
+nav ul li:last-child {
+  margin-right: 40px;
+}
 
-  .call-to-action-btn {
-    color: var(--primary-color);
-    border-radius: 12.5px;
-    font-weight: bold;
-    font-size: 1rem;
-    border: 2px solid var(--primary-color);
-  }
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
 
-  .call-to-action-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border: 2px solid var(--primary-color);
-  }
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.call-to-action-btn {
+  color: var(--primary-color);
+  border-radius: 12.5px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid var(--primary-color);
+  transition: all 0.5s;
+}
+
+.call-to-action-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+}
 
   /* Hero Section */
 
@@ -110,28 +116,33 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #F2F2F2;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: fit-content;
-  height: fit-content;
-}
-
-.hero-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: var(--background-color);
 }
 
 .hero-text h1 {
-    text-align: center;
-    color: var(--primary-color);
-    line-height: 1.25;
-    font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+#hero-first-line {
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+#hero-second-line {
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+#hero-first-line:hover {
+  color: var(--secondary-color);
+  transition: all 0.5s;
+}
+
+#hero-second-line:hover {
+  color: var(--secondary-color);
+  transition: all 0.5s;
 }
 
 .hero-services {
@@ -144,45 +155,65 @@
 }
 
 .hero-action a {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    border: 2px solid var(--primary-color)
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.5s;
 }
 
 .hero-action a:hover {
-    background-color: white;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color)
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  transition: all 0.5s;
 }
 
 .service-signs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .service-signs i {
-  font-size: 1.5rem;
-  color: #007EFF;
+  font-size: 1.75rem;
+  color: var(--secondary-color);
 }
 
 /* Banner image section */
 
+.banner-img-container {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  padding: 0;
+}
+
 .banner-img {
   background-image: url("/assets/img/hero/post-hero-image.jpg");
   width: 100%;
-  aspect-ratio: 3 / 1;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 20px;
+  margin: 0;
 }
 
-/* Why us section */
+.banner-img-container .banner-img {
+  transform: scale(1.0);
+  transition: all 0.5s;
+}
+
+.banner-img-container:hover .banner-img {
+  transform: scale(1.2);
+}
+
+/* Why us section */  
 
 .why-content {
   border-radius: 20px;
@@ -194,19 +225,30 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-radius: 20px;
 }
 
 .why-content .card-header i {
   font-size: 3rem;
   color: var(--primary-color);
+  transition: all 0.5s;
 }
 
-.why-content .card-body p {
-  display: flex;
-  justify-content: center;
+.why-content:hover .card-header i {
+  color: var(--secondary-color);
 }
 
 /* Services section */
+
+.quote i{
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.quote:hover i {
+  color: var(--secondary-color);
+  transition: all 0.5s;
+}
 
 #services-section img {
   border-radius: 15px;
@@ -220,13 +262,17 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-radius: 15px;
 }
 
 .services-symbol i {
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.services-symbol:hover i {
+  color: var(--secondary-color);
 }
 
 .services-symbol p {
@@ -235,64 +281,35 @@
   color: var(--primary-color);
 }
 
-/*Services Section old*/
-
-.services {
-  width: 100%;
-}
-
-.header-service {
-  color: var(--primary-color);
-}
-
-.service-card{
-  width: 100%;
-  background-color: white;
-  border-radius: 20px;
-}
-
-#design-3d {
- background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("../img/services/3d_design_service.jpg");
-}
-
-#boq {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("../img/services/boq_preparation.jpg");
-}
-
-#vasthu {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("../img/services/vasthu_zodia_image.PNG");
-}
-
-#drawings {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%), url("../img/services/drawing_preparation.jpg");
-}
-
-.service-card-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.service-img-container {
+  overflow: hidden;
+  padding: 0;
   border-radius: 15px;
 }
 
-.service-card-name h3 {
-  color: var(--primary-color);
-  font-weight: bold;
+.service-img-container .service-img {
+  transform: scale(1.0);
+  transition: all 0.5s;
 }
 
-.service-btn {
-  color: var(--primary-color);
-  border-radius: 15px;
-  font-weight: bold;
-  border: 2px solid var(--primary-color);
-  
+.service-img-container:hover .service-img {
+  transform: scale(1.2);
 }
 
 /* Previous Projects */
 
-.project-image img {
-  border-radius: 20px;
+.project-image-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.project-image-container .project-image {
+  transform: scale(1.0);
+  transition: all 0.5s;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.2);
 }
 
 .project-des h3 {
@@ -302,12 +319,6 @@
 .project img {
   border-radius: 15px;
   aspect-ratio: 3 / 2;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  
 }
 
 .project-features {
@@ -338,17 +349,18 @@ a {
   color: #737373;
 }
 
-.project-features i {
+.feature-symbol {
   font-size: 1.7rem;
   border-right: 2px solid #737373;
-  color: var(--primary-color);
 }
 
-.projects-btn {
-  color: black;
-  font-weight: bold;
-  border: 2px solid black;
-  border-radius: 15px;
+.project-des .feature-symbol {
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+
+.project-des:hover .feature-symbol {
+  color: var(--secondary-color);
 }
 
 /* Testimonials */
@@ -424,53 +436,44 @@ a {
 
 /* House plans */
 
-.product-link:hover .product-card {
-  border: 2px solid #DFDFDF;
-  box-shadow: #737373 ;
-}
-
-.product-card {
-  background-color: #F2F2F2;
-  border-radius: 20px;
-}
-
 .product {
   width: 100%;
+  border-radius: 15px;
 }
 
 #image-1-1 {
-  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+  background-image: url("/assets/img/shop/image-1-1.jpeg");
 }
 
 #image-1-2 {
-  background-image: url("/assets/img/projects/3_storey_house_at_gampaha.jpg");
+  background-image: url("/assets/img/shop/image-1-2.jpg");
 }
 
 #image-1-3 {
-  background-image: url("/assets/img/projects/3_storey_house_at_matara.jpg");
+  background-image: url("/assets/img/shop/image-1-3.jpg");
 }
 
-#image-1-4 {
-  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
+#image-2-1 {
+  background-image: url("/assets/img/shop/image-2-1.jpeg");
 }
 
 .product-image {
-  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 100%;
   aspect-ratio: 3 / 2;
 }
 
-.product-image.product-image button {
+.product .product-image button {
   display: none;
+  transition: all 0.5s;
 }
 
-.product-image:hover.product-image button {
+.product:hover .product-image button {
   display: flex;
-
+  transition: all 0.5s;
 }
 
 .product-image button {
@@ -479,11 +482,12 @@ a {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
   border-radius: 15px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.5);
 }
 
-.product img {
-  width: 40%;
+.product-image button:hover{
+  background-color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
 }
 
 .product-btn {
@@ -491,30 +495,12 @@ a {
   font-weight: 600;
   color: var(--primary-color);
   border: none;
+  font-size: 1.1rem;
+  transition: all 0.5s;
 }
 
-#large-product-img {
-  background-image: url("/assets/img/projects/5_storey_residence_at_piliyandala.jpg");
-}
-
-.large-product-img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
-}
-
-.large-product-img-content {
-  width: 40%;
-  background-color: white;
-  border-radius: 15px;
-  display: none;
-}
-
-.large-product-img:hover  .large-product-img-content {
-  display: block;
+.product-btn:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Custom design */
@@ -529,12 +515,12 @@ a {
   font-weight: bold;
   font-size: 1rem;
   border: 2px solid var(--primary-color);
+  transition: all 0.5s;
 }
 
 .custom-design-btn:hover {
   background-color: white;
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
 }
 
 /* Staff section */
@@ -545,6 +531,7 @@ a {
 
 .staff-card {
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .staff-card img {
@@ -563,10 +550,18 @@ a {
   font-size: 1.5rem;
   color: var(--primary-color);
   z-index: 1;
+  transition: all 0.5s;
+}
+
+.staff-card:hover i {
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  transition: all 0.5s;
 }
 
 .staff-card h5 {
   font-weight: 500;
+  transition: all 0.5s;
 }
 
 .staff-card p {
@@ -574,6 +569,21 @@ a {
   font-weight: 500;
   margin: 0;
   font-size: 0.9rem;
+  transition: all 0.5s;
+}
+
+.staff-card:hover h5, .staff-card:hover p {
+  font-weight: 600 ;
+  transition: all 0.5s;
+}
+
+.staff-card img {
+  transition: all 0.5s;
+}
+
+.staff-card:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 .staff-btn {
@@ -581,6 +591,12 @@ a {
   font-weight: 600;
   color: var(--primary-color);
   border: none;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+
+.staff-btn:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Blog section */
@@ -588,12 +604,23 @@ a {
 .blog-card {
   width: 100%;
   border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-link .blog-img  {
+  transition: all 0.5s;
+}
+
+.blog-link:hover .blog-img  {
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 .blog-card img {
   width: 100%;
   aspect-ratio: 3 / 2;
   border-radius: 20px;
+  transition: all 0.5s;
 }
 
 .blog-card h5 {
@@ -603,7 +630,6 @@ a {
 .blog-card p {
   font-size: 0.9rem;
   color: #737373;
-  
 }
 
 .blog-card .read-more {
@@ -621,6 +647,12 @@ a {
   font-weight: 600;
   color: var(--primary-color);
   border: none;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+
+.blog-btn:hover {
+  background-color: var(--secondary-color);
 }
 
 /* Footer section */
