@@ -500,7 +500,7 @@ nav ul li a:hover {
 }
 
 .product-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* Custom design */
@@ -596,7 +596,7 @@ nav ul li a:hover {
 }
 
 .staff-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* Blog section */
@@ -652,7 +652,7 @@ nav ul li a:hover {
 }
 
 .blog-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 /* Footer section */
