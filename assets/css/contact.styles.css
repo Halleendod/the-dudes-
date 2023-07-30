@@ -22,12 +22,6 @@
     color: white;
 }
 
-#contact-header-btn {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-}
-
 #contact-submit {
     background-color: var(--primary-color);
     color: white;
