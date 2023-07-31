@@ -44,3 +44,10 @@ label {
     font-weight: 500;
     margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 767px) {
+
+   .form-box {
+    width: 100%;
+   }
+}
