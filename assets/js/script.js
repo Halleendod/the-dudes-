@@ -9,3 +9,9 @@
 //         menuBtn.style.color = "#00ABE4";
 //     } else {menuBtn.style.color = "#737373";}
 // });
+
+$(document).ready (()=> {
+
+    $("#hamb")
+
+}) 
