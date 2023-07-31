@@ -180,6 +180,10 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
+.hero-image {
+  width: 60%;
+}
+
 .hero-action a {
   color: var(--background-secondary-color);
   font-size: 1rem;
@@ -760,135 +764,51 @@ footer {
 .rights span {
   color: white;
 }
-/* 
-@media only screen and (max-width:600px) {
 
-    .mobile {display: flex;}
+/* Screen sizes lessa than 576 px */
 
-    .desktop {display: none;}
+@media only screen and (max-width: 575px) {
 
-    .header-section{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  /* Hero content */
 
-    .logo {
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      width: 100%;
-      padding: 10px;
-      top: 5px;
-      z-index: 1;
-    }
+  h1 {
+    font-size: 2.3rem;
+  }
 
-    .logo img {
-      height: 50px;
-    }
+  .hero-image {
+    width: 90%;
+  }
 
-    .hamburg {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 2;
-    }
+  .hero-content {
+    height: 100vh;
+    justify-content: space-around;
+  }
 
-    .hamburg button {
-      border: none;
-      font-size: 2.5rem;
-      color: #737373;
-      background: none;
-    }
+  /* Banner section */
 
-    .mobile-menu-section.hidden {height: 0;}
+  .banner-img-container {
+    height: 350px;
+  }
 
-    .mobile-menu-section {
-      width: 100%;
-      height: 500px;
-      transition: height 0.5s;
-    }
+  /* Footer section */
 
-    .mobile-menu-container {
-      
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 80px 0 0 0;
-    }
+  .footer-contacts {
+    text-align: center;
+  }
 
-    .mobile-menu {
-      margin-bottom: 30px;
-      width: 50%;
-    }
+  .social-media {
+    text-align: center;
+  }
 
-    .mobile-menu ul {
-      flex-direction: column;
-      text-align: center;
-    }
+  .quick-links {
+    text-align: center;
+  }
 
-    .mobile-menu ul li {
-      text-align: center;
-      margin: 10px 0;
-      border-bottom: 1px solid #737373;
-      border-radius: 20px;
-      padding-bottom: 10px;
-    }
+  .social-icons {
+    justify-content: center;
+  }
 
-    .mobile-menu ul li a {
-      color: var(--primary-color);
-      font-size: 1rem;
-    }
-
-    .hero-section {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .round-seperator {
-      height: 85px;
-      width: 100%;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      background-color: var(--background-color);
-    }
-
-    .hero-content{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      height: 100vh;
-      padding: 50px 0 50px 0;
-    }
-
-    .hero-content.margin {margin: 0;}
-
-    .hero-image {
-      width: 80%;
-      height: 100%;
-      background-image: url("../img/whyus/3d_rendered_house_for_why_us_section.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 20px;
-      border: 5px solid var(--primary-color);
-    }
-
-    .hero-text-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      margin: 50px 0 0 0;
-    }
-
-    .hero-text h1 {
-      font-size: 3rem;
-    }
+}
 
     /* Why us section 
 
