@@ -26,10 +26,20 @@
     border-radius: 15px;
 }
 
+/* Vision and mission */
+
 .mission-row img {
     border-radius: 15px;
 }
 
 .vision-row img {
     border-radius: 15px;
+}
+
+.mission-img {
+    width: 95%;
+}
+
+.vision-img {
+    width: 95%;
 }

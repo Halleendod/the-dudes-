@@ -14,11 +14,6 @@
     color: white;
 }
 
-/* .product-card {
-    background-color: #F2F2F2;
-    border-radius: 20px;
-} */
-
 .show {
     display: flex;
 }
@@ -103,4 +98,56 @@
 
 .text-bold {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .product {
+        width: 297px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .product {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .product {
+        width: 340px;
+    }
+
+    #story, #bedroom, #bathroom {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product {
+        width: 250px;
+    }
+
+    #story, #bedroom, #bathroom {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .product {
+        width: 95%;
+    }
+
+    #story, #bedroom, #bathroom {
+        width: 60%;
+    }
+
 }
