@@ -149,6 +149,7 @@ nav ul li a:hover {
   text-align: center;
   line-height: 1.25;
   font-weight: 700;
+  color: var(--primary-color);
 }
 
 #hero-first-line {
