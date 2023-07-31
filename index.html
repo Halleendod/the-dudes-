@@ -21,10 +21,10 @@
 
             <div class="row d-flex flex-row py-3">
                 <div class="col-2">
-                    <a href="/"><img src="/assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="50px"></a>
+                    <a href="/"><img src="./assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="50px"></a>
                 </div>
-                <div class="col-10 d-flex justify-content-end align-items-center">  
-                    <nav class="d-flex align-items-center">
+                <div class="col-10 justify-content-end align-items-center d-none d-lg-flex">  
+                    <nav id="desktop-nav" class="d-flex align-items-center">
                         <ul class="d-flex m-0">
                             <li><a class="active" href="/">Home</a></li>
                             <li><a href="/assets/pages/shop.html">Shop</a></li>
@@ -36,9 +36,28 @@
                         <a class="call-to-action-btn btn btn-outline-primary px-3 py-1" href="/assets/pages/contact.html">Contact Us</a>
                     </div> 
                 </div>
+
+                <div class="col-9 d-block d-lg-none"></div>
+
+                <div class="hamburg col-1 d-flex d-lg-none align-items-center">
+                    <i class="fa-solid fa-bars fs-3"></i>
+                </div>
             </div>
-        </div> 
-        
+        </div>
+        <div class="menu-page pb-4 d-flex flex-column justify-content-center align-items-center border">
+            <nav class="">
+                <ul class="d-flex flex-column justify-content-center align-items-center p-0">
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a class="" href="/assets/pages/shop.html">Shop</a></li>
+                    <li><a class="" href="/assets/pages/blog.html">Blog</a></li>
+                    <li><a class="" href="/assets/pages/about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="call-to-action">
+                <a class="call-to-action-btn btn btn-outline-primary px-3 py-1" href="/assets/pages/contact.html">Contact Us</a>
+            </div> 
+        </div>
+  
     </header><!--hero-section-->
 
     <!--hero-section-->
@@ -47,20 +66,34 @@
         <!-- <div class="round-seperator mobile"></div> -->
 
         <div class="container d-flex flex-column align-items-around">
-            <div class="row mb-5">
-                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                    <div class="hero-text">
+            <div class="row mb-5 pt-5 pt-lg-none mt-5 mt-lg-0">
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+                    <div class="hero-text d-flex flex-column justify-content-center align-items-center">
+                        <!-- <img class="d-lg-none" style="width: 50%; height: auto;" src="/assets/img/hero/3d-house-model-design.png" alt=""> -->
+                        <div style="width: 60%;" class="hero-image d-lg-none">
+                            <div id="" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid" src="/assets/img/hero/3d-house-model-design-3.png" class="d-block w-100" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid" src="/assets/img/hero/3d-house-model-design.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
                         <h1 id="hero-first-line">Dream Homes</h1>
                         <h1 id="hero-second-line">Designed Perfectly</h1>
-                        <h4 class="text-center mt-3">Architects | Civil Engineers | MEP Engineers</h4>
-                        <p class="text-center mt-4 fs-6">Welcome to our architectural wonderland, where innovation meets imagination. Discover extraordinary designs, expertly crafted with a blend of creativity and functionality. Embrace a seamless journey as we transform your visions into captivating realities. Your dream space awaits; step into a world of architectural excellence. Call us <a href="#"><span style="color: var(--primary-color); font-weight: 600;">0112122324</span></a> or</p>
+                        <h4 class="mt-3">Architects | Civil Engineers | MEP Engineers</h4>
+                        <p class="mt-4 fs-6">Welcome to our architectural wonderland, where innovation meets imagination. Discover extraordinary designs, expertly crafted with a blend of creativity and functionality. Embrace a seamless journey as we transform your visions into captivating realities. Your dream space awaits; step into a world of architectural excellence. Call us <a href="#"><span style="color: var(--primary-color); font-weight: 600;">0112122324</span></a> or</p>
                     </div>
         
-                    <div class="hero-action mt-4">
+                    <div class="hero-action mt-3 mt-lg-4">
                         <a class="btn btn-primary py-2 px-3" href="/assets/pages/contact.html">Send Message</a>
                     </div>
                 </div>
-                <div class="col-6 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 d-none d-lg-flex flex-column justify-content-center">
                     <div class="hero-image">
                         <div id="" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -77,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="row w-100 hero-services mt-5">
+            <div class="row w-100 hero-services d-none d-lg-flex mt-5">
                 <div class="col-12 d-flex flex-row justify-content-around">
                     <div class="service-signs">
                         <i class="fa-solid fa-house-chimney-window"></i>
@@ -105,7 +138,7 @@
     </section> <!--hero-section-->
 
     <!--Banner-image-->
-    <section id="banner-image" class="w-100 mb-5">
+    <section id="banner-image" class="w-100 mb-5 mt-5">
         <div class="container banner-img-container">
             <div class="banner-img"></div>
         </div>
@@ -123,42 +156,41 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col">
-
-                    <div class="why-content card">
+                <div class="col-12 col-md-4 p-1">
+                    <div class="why-content card w-100">
                         <div class="card-header">
                             <i class="fa-solid fa-award mt-2"></i>
-                            <h5 class="mt-3">Expertise and Experience</h5>
+                            <h5 class="text-center mt-3">Expertise and Experience</h5>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-center">
                                 With decades of collective experience and a talented team of professionals, our firm brings a wealth of expertise to every project we undertake, guaranteeing top-notch results that exceed expectations. Trust us to bring your architectural visions to life with precision and creativity.
                             </p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col">
-                    <div class="why-content card">
+                <div class="col-12 col-md-4 p-1">
+                    <div class="why-content card w-100">
                         <div class="card-header">
                             <i class="fa-regular fa-handshake mt-2"></i>
-                            <h5 class="mt-3">Client-Centric Focus</h5>
+                            <h5 class="text-center mt-3">Client-Centric Focus</h5>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-center">
                                 Customer satisfaction drives our approach. We prioritize your needs, ensuring transparent communication, and meticulously tailor our services to precisely match your distinct requirements. Your contentment is the essence of our success.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="why-content card">
+                <div class="col-12 col-md-4 p-1">
+                    <div class="why-content card w-100">
                         <div class="card-header">
                             <i class="fa-solid fa-gift mt-2"></i>
-                            <h5 class="mt-3">Comprehensive Services</h5>
+                            <h5 class="text-center mt-3">Comprehensive Services</h5>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-center">
                                 Our comprehensive services cover the spectrum, encompassing 3D design, BOQ, Vasthu consultations, and detailed drawings, seamlessly streamlining the architectural journey. Embrace a stress-free experience as we bring your vision to fruition.
                             </p>
                         </div>
@@ -177,8 +209,8 @@
                 <h2 class="text-center">Our Comprehensive Architectural Services</h2>
                 <div class="underline"></div>
             </div>
-            <div class="row d-flex align-items-center mt-5">
-                <div class="col-5 quote">
+            <div class="row d-flex flex-column-reverse flex-lg-row align-items-center mt-5">
+                <div class="col-12 col-lg-5 quote">
                     
                     <p class="mt-4 fs-5">
                         <i class="fa-solid fa-quote-left fs-1"></i>
@@ -194,7 +226,7 @@
 
                     </p>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class="row">
                         <div class="col-6 service-img-container">
                             <img class="service-img img-fluid" src="/assets/img/services/3d_design_service.jpg" alt="">
@@ -252,25 +284,25 @@
         <div class="container">
 
             <div class="row mt-3 mb-5 d-flex flex-column align-items-center">
-                <h2 class="d-flex justify-content-center">Inspiring Creations in Our Portfolio Gallery</h2>
+                <h2 class="text-center">Inspiring Creations in Our Portfolio Gallery</h2>
                 <div class="underline"></div>
             </div>
 
-            <div class="row mt-4">
-                <div class="col-6">
+            <div class="row border mt-4 d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
                     <div class="project-image-container">
                         <img class="project-image img-fluid" src="/assets/img/projects/5_storey_residence_at_piliyandala.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-6 d-flex align-items-center">
-                    <div class="project-des">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <div class="project-des mt-3">
                         <h3>5 Story Office Building | Piliyandala</h3>
                         <p>
                             Our architectural firm proudly presents a 5-story building in Piliyandala, showcasing modern aesthetics and thoughtful design. This impressive structure reflects our commitment to excellence, blending creativity with functionality to deliver remarkable spaces for our valued clients.
                         </p>
                         <div class="project-features d-flex mt-5">
                             
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-house pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Floor area</p>
@@ -278,7 +310,7 @@
                                 </div>
                             </div>
 
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-car pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Parking</p>
@@ -291,10 +323,10 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-5 d-flex flex-column-reverse flex-lg-row align-items-center">
 
-                <div class="col-6 d-flex align-items-center">
-                    <div class="project-des">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <div class="project-des mt-3">
                         <h3>3 Story Residence House | Gampaha</h3>
                         <p>
                             Discover our architecturally rich 3-story residence in Gampaha, featuring 6 bedrooms with attached bathrooms. This stunning house showcases a unique and futuristic external design, setting new standards for contemporary luxury and functionality. A true testament to our commitment to architectural excellence in the area.
@@ -302,7 +334,7 @@
 
                         <div class="project-features d-flex mt-5">
                             
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-house pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Floor area</p>
@@ -310,7 +342,7 @@
                                 </div>
                             </div>
 
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-bed pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Bedrooms</p>
@@ -322,7 +354,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="project-image-container">
                         <img class="project-image img-fluid" src="/assets/img/projects/3_storey_house_at_gampaha.jpg" alt="">
                     </div>
@@ -330,21 +362,21 @@
                 
             </div>
 
-            <div class="row mt-5">
-                <div class="col-6">
+            <div class="row mt-5 d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6">
                     <div class="project-image-container">
                         <img class="project-image img-fluid" src="/assets/img/projects/3_storey_house_at_matara.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-6 d-flex align-items-center">
-                    <div class="project-des">
+                <div class="col-12 col-lg-6 d-flex align-items-center">
+                    <div class="project-des mt-3">
                         <h3>3 Story Residence House | Matara</h3>
                         <p>
                             Discover our architecturally rich 3-story luxury residence in Matara, boasting 7 bedrooms with a rooftop retreat. This exceptional house features an elegant wooden pergola at the front, epitomizing sophistication and modern living. A true testament to our commitment to architectural excellence, setting new standards in the area.
                         </p>
                         <div class="project-features d-flex mt-5">
                             
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-house pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Floor area</p>
@@ -352,7 +384,7 @@
                                 </div>
                             </div>
 
-                            <div class="wrap-content px-3 py-1 mx-4">
+                            <div class="wrap-content px-3 py-1 mx-2 mx-lg-4">
                                 <i class="feature-symbol fa-solid fa-bed pe-3"></i>
                                 <div class="des ps-3">
                                     <p class="des-topic">Bedrooms</p>
@@ -372,7 +404,8 @@
     <section id="testimonial" class="mt-2">
         <div class="container">
             <div class="row mt-5 d-flex flex-column align-items-center">
-                <h2 class="header-testimonial d-flex justify-content-center">See What Our Satisfied Clients Have To Say</h2>
+                <h2 class="header-testimonial text-center d-lg-block d-none">See What Our Satisfied Clients Have To Say</h2>
+                <h2 class="header-testimonial text-center d-block d-lg-none">Our Satisfied Clients</h2>
                 <div class="underline"></div>
             </div>
 
@@ -381,8 +414,8 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             
-                            <div class="col-12">
-                                <div class="testimonial-card w-100 card">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="testimonial-card w-75 card">
                                     <div class="card-body testimonial-card-body">
                                         <img class="profile-img" src="/assets/img/testimonial/abc_ceo.PNG" alt="">
                                         <h4>Mr. Edward Cooray</h4>
@@ -397,8 +430,8 @@
                         </div>
                         <div class="carousel-item">
                                 
-                            <div class="col-12">
-                                <div class="testimonial-card w-100 card">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="testimonial-card w-75 card">
                                     <div class="card-body testimonial-card-body">
                                         <img class="profile-img" src="/assets/img/testimonial/home_garden_ceo.PNG" alt="">
                                         <h4>Mr. Yazool Ifthikhar</h4>
@@ -411,8 +444,8 @@
                             </div>  
                         </div>
                         <div class="carousel-item">
-                            <div class="col-12">
-                                <div class="testimonial-card w-100 card">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="testimonial-card w-75 card">
                                     <div class="card-body testimonial-card-body">
                                         <img class="profile-img" src="/assets/img/testimonial/prime_garden_md.PNG" alt="">
                                         <h4>Ms. Devika Fernando</h4>
@@ -565,8 +598,8 @@
 
     <!--Trusted brands-->
     <section id="trusted-brands" class="my-5">
-        <div class="row pt-5 mt-5">
-            <h2 class="d-flex justify-content-center">Trusted by 20+ Renowned Brands in Sri Lanka for Exceptional Workplace Designs!</h2>
+        <div class="row pt-5 mt-5 ms-3 me-3">
+            <h2 class="text-center">Trusted by 20+ Renowned Brands in Sri Lanka for Exceptional Workplace Designs!</h2>
         </div>
         <div class="container">
             
@@ -580,7 +613,7 @@
                     <div class="wrap-logo"><img src="/assets/img/logos/Damro-logo.jpg" alt=""></div>
                     <div class="wrap-logo"><img src="/assets/img/logos/maliban-logo.png" alt=""></div>
                     <div class="wrap-logo"><img src="/assets/img/logos/hnb-logo.png" alt=""></div>
-                    <div class="wrap-logo"><img src="/assets/img/logos/asiri-logo.png" alt=""></div>
+                    <div class="wrap-logo py-5"><img src="/assets/img/logos/asiri-logo.png" alt=""></div>
                 </div>
                 
             </div>
@@ -592,12 +625,13 @@
         <div class="container">
 
             <div class="row d-flex flex-column align-items-center">
-                <h2 class="d-flex justify-content-center">Purchase Your Dream Home Design in No Time</h2>
+                <h2 class="text-center d-lg-block d-none">Purchase Your Dream Home Design in No Time</h2>
+                <h2 class="text-center d-lg-none d-block">Purchase Pre Designed Plans</h2>
                 <div class="underline"></div>
             </div>
 
             <div class="row d-flex mt-5">
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3 p-1">
                     <a id="101" class="product show p-0 card" href="#">
                         <div class="card-body d-flex flex-column">
                             <div id="image-1-1" class="product-image d-flex justify-content-center align-items-center">                          
@@ -613,7 +647,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3 p-1">
                     <a id="102" class="product show p-0 card" href="#">
                         <div class=" card-body d-flex flex-column">
                             <div id="image-1-2" class="product-image d-flex justify-content-center align-items-center">                          
@@ -630,7 +664,7 @@
                     </a>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3 p-1">
                     <a id="103" class="product show p-0 card" href="#">
                         <div class=" card-body d-flex flex-column">
                             <div id="image-1-3" class="product-image d-flex justify-content-center align-items-center">                          
@@ -647,7 +681,7 @@
                     </a>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3 p-1">
                     <a id="104" class="product show p-0 card" href="#">
                         <div class=" card-body d-flex flex-column">
                             <div id="image-2-1" class="product-image d-flex justify-content-center align-items-center">                          
@@ -675,16 +709,16 @@
     </section> <!--Product Section-->
 
     <!--Custom Design-->
-    <section id="custom-design" class="my-5">
+    <section id="custom-design" class="my-5 py-5 py-lg-0">
         <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-6 text-center">
+            <div class="row d-flex flex-column-reverse flex-lg-row align-items-center">
+                <div class="col-12 col-lg-6 text-center mt-4">
                     <h2>Need a Custom Design?</h2>
                     <h5 class="mt-4 lh-base">Call us <a id="phone" href="">0112122324</a> or send us a message with all the requirements of your dream home</h5>
                     <a href="/assets/pages/contact.html" class="custom-design-btn btn btn-primary px-3 py-2 mt-4">Send Message</a>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <img class="custom-img img-fluid" src="/assets/img/custom/house-layout1.png" alt="">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                    <img class="custom-img img-fluid w-75 w-lg-100" src="/assets/img/custom/house-layout1.png" alt="">
                 </div>
             </div>
         </div>
@@ -698,7 +732,7 @@
                 <div class="underline"></div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
                     <div class="staff-card card">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="/assets/img/staff/managing_director.jpg" alt="MD">
@@ -710,7 +744,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
                     <div class="staff-card card">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="/assets/img/staff/civil_engineer.jpg" alt="MD">
@@ -721,7 +755,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
                     <div class="staff-card card">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="/assets/img/staff/mep_engineer.jpg" alt="MD">
@@ -732,7 +766,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <div class="col-12 col-sm-6 col-lg-3 mt-5">
                     <div class="staff-card card">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <img src="/assets/img/staff/architect.jpg" alt="MD">
@@ -756,12 +790,12 @@
     <section class="blog-section" id="blog">
         <div class="container mt-5">
             <div class="row d-flex flex-column align-items-center">
-                <h2 class="d-flex justify-content-center header-blog">Insights & Inspiration from Our Blog</h2>
+                <h2 class="text-center header-blog">Insights & Inspiration from Our Blog</h2>
                 <div class="underline"></div>
             </div>
-            <div class="row blog-row">
+            <div class="row d-flex flex-column flex-lg-row align-items-center">
 
-                <div class="blog-link col-12 col-lg-4 mt-5">
+                <div class="blog-link col-12 col-lg-4 mt-5 w-75 w-lg-100">
                     <a href="/assets/pages/blog.posts/blog.post.1/blog.post.1.html">
                         <div class="blog-card">
                             <img class="blog-img" src="/assets/img/blog/10_benifits_of_making_3d_designs.jpeg" alt="house 3d design">
@@ -772,7 +806,7 @@
                     </a>
                 </div>
 
-                <div class="blog-link col-12 col-lg-4 mt-5">
+                <div class="blog-link col-12 col-lg-4 mt-5 w-75 w-lg-100">
                     <a href="/assets/pages/blog.posts/blog.post.1/blog.post.1.html">
                         <div class="blog-card">
                             <img class="blog-img" src="/assets/img/blog/15_new_design_ideas.png" alt="design ideas">
@@ -783,7 +817,7 @@
                     </a>
                 </div>
 
-                <div class="blog-link col-12 col-lg-4 mt-5">
+                <div class="blog-link col-12 col-lg-4 mt-5 w-75 w-lg-100">
                     <a href="/assets/pages/blog.posts/blog.post.1/blog.post.1.html">
                         <div class="blog-card">
                             <img class="blog-img" src="/assets/img/blog/13_ideas_to_reduce_the_cost.jpg" alt="reduce the cost">
@@ -807,7 +841,7 @@
     <footer>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-6 col-lg-4">
                     <div class="footer-contacts">
                         <h3>Quick Contacts</h3>
                         <h4 class="mt-3">Phone</h4>
@@ -820,25 +854,41 @@
                     </div>
                     
                 </div>
-                <div class="col-4">
+                <div class="col-4 d-none d-lg-block">
                     <div class="map mt-2">
-                        <img src="/assets/img/footer/location_embed_map.PNG" alt="location map">
+                        <img class="img-fluid" src="/assets/img/footer/location_embed_map.PNG" alt="location map">
                     </div>
                     
                 </div>
-                <div class="col-4">
-                    <div class="right-col ms-5 ps-5">
+                <div class="col-6 col-lg-4">
+                    <div class="right-col ms-xl-5 ps-xl-5">
                         <div class="social-media">
                             <div class="row">
                                 <h3>Social Media</h3>
                             </div>
-                            <div class="row mt-3">
+
+                            <!-- Social icons for all screens other than extra small-->
+
+                            <div class="row d-none d-sm-flex mt-3">
                                 <div class="social-icons d-flex">
                                     <a class="me-3" href="#"><div id="facebook"></div></a>
                                     <a class="me-3" href="#"><div id="instagram"></div></a>
                                     <a class="me-3" href="#"><div id="linkedin"></div></a>
                                     <a class="me-3" href="#"><div id="youtube"></div></a>
                                 </div>
+                            </div>
+
+                            <!-- Social icons for extra small screens-->
+
+                            <div class="row d-flex d-sm-none mt-3">
+                                <div class="col-4"><a class="me-3" href="#"><div class="mobile-social" id="facebook"></div></a></div>
+                                <div class="col-4"><a class="me-3" href="#"><div class="mobile-social" id="instagram"></div></a></div>
+                                <div class="col-4"></div>
+                            </div>
+                            <div class="row d-flex d-sm-none">
+                                <div class="col-4"><a class="me-3" href="#"><div class="mobile-social" id="linkedin"></div></a></div>
+                                <div class="col-4"><a class="me-3" href="#"><div class="mobile-social" id="youtube"></div></a></div>
+                                <div class="col-4"></div>
                             </div>
                         </div>
                         <div class="quick-links mt-4">
@@ -856,6 +906,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row md-map d-lg-none mt-4">
+                <div class="map d-flex justify-content-center mt-2">
+                    <img class="img-fluid" src="/assets/img/footer/location_embed_map.PNG" alt="location map">
+                </div>
+            </div>
             <div class="row">
                 <div class="rights d-flex justify-content-center my-3">
                     <span>Ⓒ A&A Designs Pvt Ltd. All Rights Reserved</span>
@@ -866,6 +921,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/569015700f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -127,9 +127,6 @@ $(document).ready((e)=>{
     $("#contact-submit").click(()=>{
         $(this).scrollTop("#contact-header")
         $("#submit-success").css({"display": "block", "transition": "all 0.5s"})
-        
-        // alert("succeess")
-        // console.log (Success)
     })
     
 })
