@@ -2,6 +2,14 @@ section {
     margin-top: 85px;
 }
 
+.header-box {
+    background-image: url("/assets/img/blog/eco-friendly-living.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #blog-header {
     margin-top: 150px;
 }
