@@ -13,6 +13,7 @@
     <title>10 benifits of making 3D designs before construction</title>
 </head>
 <body>
+    <!--header-section-->
     <header class="header-section">
         <div class="container">
 
@@ -20,8 +21,11 @@
                 <div class="col-2">
                     <a href="/"><img src="/assets/img/header/aanda_design_logo.png" alt="A & A design logo"  height="50px"></a>
                 </div>
-                <div class="col-10 d-flex justify-content-end align-items-center">  
-                    <nav class="d-flex align-items-center">
+
+                <!-- Menu section for desktops -->
+
+                <div class="col-10 justify-content-end align-items-center d-none d-lg-flex">  
+                    <nav id="desktop-nav" class="d-flex align-items-center">
                         <ul class="d-flex m-0">
                             <li><a href="/">Home</a></li>
                             <li><a href="/assets/pages/shop.html">Shop</a></li>
@@ -33,21 +37,55 @@
                         <a class="call-to-action-btn btn btn-outline-primary px-3 py-1" href="/assets/pages/contact.html">Contact Us</a>
                     </div> 
                 </div>
+
+                <!-- Hamburg for mobile menu -->
+
+                <div class="col-8 d-block d-lg-none"></div>
+
+                <div class="hamburg col-2 d-flex d-lg-none align-items-center">
+                    <i class="fa-solid fa-bars fs-3"></i>
+                </div>
             </div>
-        </div> 
-        
-    </header>
+        </div>
+
+        <!-- Menu section for mobiles-->
+
+        <div class="menu-page pb-4 d-flex flex-column justify-content-center align-items-center border">
+            <nav class="">
+                <ul class="d-flex flex-column justify-content-center align-items-center p-0">
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a class="" href="/assets/pages/shop.html">Shop</a></li>
+                    <li><a class="" href="/assets/pages/blog.html">Blog</a></li>
+                    <li><a class="" href="/assets/pages/about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="call-to-action">
+                <a class="call-to-action-btn btn btn-outline-primary px-3 py-1" href="/assets/pages/contact.html">Contact Us</a>
+            </div> 
+        </div>
+  
+    </header><!--header-section-->
 
     <section id="blog-post" class="w-100">
         <div class="container">
             
-            <div class="row w-100">
+            <div class="row">
+
+                <!-- Main post -->
+
                 <div class="main-post col-8">
                     <div class="card">
                         <div class="card-body">
                             <h2 class="mt-3">10 benifits of making 3D designs before construction</h2>
                             <img class="img-fluid mt-3" src="/assets/img/blog/10_benifits_of_making_3d_designs.jpeg" alt="">
+
+                            <!--Main content-->
+
                             <div class="blog-content mt-4"></div>
+
+
+                            <!-- Share icons -->
+
                             <div class="share-icons">
                                 <span class="me-3">Share</span>
                                 <button class="me-3"><i class="fa-brands fa-facebook"></i></button>
@@ -56,15 +94,25 @@
                                 <button class="me-3"><i class="fa-brands fa-linkedin"></i></button>
                             </div>
                             <hr>
+
+                            <!-- Comment section -->
+
                             <div class="blog-comments mt-3">
-                                <!-- <h4>Comments</h4> -->
+
                                 <textarea class="form-control" name="comment" id="comment" cols="30" rows="5" placeholder="Write your idea here.."></textarea>
                                 <button class="btn btn-submit my-3">Submit</button>
+
+                                <!-- Previous comments -->
+
                                 <div class="comments">
                                     <div class="row mt-3">
+
+                                        <!-- User comment-->
+
                                         <div class="col-1">
                                             <img id="user-image-2" src="/assets/img/blog/random-user-2.jpg" alt="">
                                         </div>
+
                                         <div class="col-11">
                                             <div class="description">
                                                 <h6>Thilini Perera</h6>
@@ -87,15 +135,19 @@
                                         </div>
                                     </div>
 
+                                    <!-- User comment -->
+
                                     <div class="row mt-3">
                                         <div class="col-1">
                                             <img id="user-image-1" src="/assets/img/blog/random-user-1.jpg" alt="">
                                         </div>
                                         <div class="col-11">
+
                                             <div class="description">
                                                 <h6>Kasun Subasinghe</h6>
                                                 <span>6 months ago</span>
                                                 <p>Such a helpful read! The benefits of 3D designs are undeniable, and after reading this blog, I'm convinced it's the way to go for our dream home. Great insights!</p>
+                                                
                                                 <div class="reaction-bar d-flex justify-content-between">
                                                     <div class="likeup">
                                                         <i class="fa-regular fa-thumbs-up me-2"></i>
@@ -119,8 +171,13 @@
                     </div>
                 </div>
 
+                <!-- Popular posts-->
+
                 <div class="col-4 popular-posts">
                     <h5>Popular Posts</h5>
+
+                    <!-- Post pane 1-->
+
                     <a href="#">
                         <div class="card">
                             <div class="card-body">
@@ -133,6 +190,8 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Post pane 2-->
     
                     <a href="#">
                         <div class="card">
@@ -146,6 +205,8 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Post pane 3-->
     
                     <a href="#">
                         <div class="card">
@@ -159,6 +220,8 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Post pane 4-->
     
                     <a href="#">
                         <div class="card">
@@ -172,6 +235,8 @@
                             </div>
                         </div>
                     </a>
+
+                    <!-- Post pane 5-->
     
                     <a href="#">
                         <div class="card">
@@ -190,69 +255,104 @@
             </div>
             
         </div>
+    </section>
 
-        <footer>
-            <div class="container mt-5">
-                <div class="row pt-5">
-                    <div class="col-4">
-                        <div class="footer-contacts">
-                            <h3>Quick Contacts</h3>
-                            <h4 class="mt-3">Phone</h4>
-                            <span>(+94) 112 122 324<br></span>
-                            <span>(+94) 777 658 742 (Whatsapp)</span>
-                            <h4 class="mt-3">Address</h4>
-                            <span>No. 21,<br>Galle Road,<br>Colombo 03.</span>
-                            <h4 class="mt-3">E-mail</h4>
-                            <span>contact@aandadesigns.lk</span>
-                        </div>
-                        
+    <footer class="mt-3">
+
+        <!-- Left corner column-->
+
+        <div class="container mt-5">
+            <div class="row">
+
+                <!-- Quick Contacts-->
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="footer-contacts mb-3">
+                        <h3>Quick Contacts</h3>
+                        <h4 class="mt-3">Phone</h4>
+                        <span>(+94) 112 122 324<br></span>
+                        <span>(+94) 777 658 742 (Whatsapp)</span>
+                        <h4 class="mt-3">Address</h4>
+                        <span>No. 21,<br>Galle Road,<br>Colombo 03.</span>
+                        <h4 class="mt-3">E-mail</h4>
+                        <span>contact@aandadesigns.lk</span>
                     </div>
-                    <div class="col-4">
-                        <div class="map mt-2">
-                            <img src="/assets/img/footer/location_embed_map.PNG" alt="location map">
-                        </div>
-                        
-                    </div>
-                    <div class="col-4">
-                        <div class="right-col ms-5 ps-5">
-                            <div class="social-media">
-                                <div class="row">
-                                    <h3>Social Media</h3>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="social-icons d-flex">
-                                        <a class="me-3" href="#"><div id="facebook"></div></a>
-                                        <a class="me-3" href="#"><div id="instagram"></div></a>
-                                        <a class="me-3" href="#"><div id="linkedin"></div></a>
-                                        <a class="me-3" href="#"><div id="youtube"></div></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quick-links mt-4">
-                                <div class="row">
-                                    <h3>Quick Links</h3>
-                                </div>
-                                <div class="row mt-1">
-                                    <a class="mt-1" href="#">Privacy Policy</a>
-                                    <a class="mt-1" href="#">Disclaimer</a>
-                                    <a class="mt-1" href="#">Terms and Conditions</a>
-                                    <a class="mt-1" href="#">About Us</a>
-                                    <a class="mt-1" href="#">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
-                <div class="row">
-                    <div class="rights d-flex justify-content-center my-3">
-                        <span>Ⓒ A&A Designs Pvt Ltd. All Rights Reserved</span>
-                    </div>   
+
+                <!-- Google map of the address-->
+
+                <div class="col-4 d-none d-lg-block">
+                    <div class="map mt-2">
+                        <img class="img-fluid" src="/assets/img/footer/location_embed_map.PNG" alt="location map">
+                    </div>
+                    
+                </div>
+
+                <!-- Right column -->
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="right-col ms-xl-5 ps-xl-5">
+
+                        <!-- Social media section -->
+
+                        <div class="social-media">
+                            <div class="row">
+                                <h3>Social Media</h3>
+                            </div>
+
+                            <!-- Social icons for all screens other than extra small-->
+
+                            <div class="row d-flex d-sm-flex mt-3">
+                                <div class="social-icons d-flex">
+                                    <a class="me-3" href="#"><div id="facebook"></div></a>
+                                    <a class="me-3" href="#"><div id="instagram"></div></a>
+                                    <a class="me-3" href="#"><div id="linkedin"></div></a>
+                                    <a class="me-3" href="#"><div id="youtube"></div></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Quick links -->
+
+                        <div class="quick-links mt-4">
+                            <div class="row">  
+                                <h3>Quick Links</h3>
+                            </div>
+
+                            <div class="row mt-1">
+                                <a class="mt-1" href="/assets/pages/policy/privacy.policy/privacy.policy.html" target=”_blank”>Privacy Policy</a>
+                                <a class="mt-1" href="/assets/pages/policy/disclaimer/disclaimer.html" target=”_blank”>Disclaimer</a>
+                                <a class="mt-1" href="/assets/pages/policy/terms/terms.conditions.html" target=”_blank”>Terms and Conditions</a>
+                                <a class="mt-1" href="/assets/pages/about.html" target=”_blank”>About Us</a>
+                                <a class="mt-1" href="/assets/pages/contact.html" target=”_blank”>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+
+            <!-- Google maps location of the address for smaller screens-->
+
+            <div class="row md-map d-lg-none mt-4">
+                <div class="map d-flex justify-content-center mt-2">
+                    <img class="img-fluid" src="/assets/img/footer/location_embed_map.PNG" alt="location map">
+                </div>
+            </div>
+
+            <!-- Copyright notice -->
+
+            <div class="row">
+                <div class="rights d-flex justify-content-center my-3">
+                    <span>Ⓒ A&A Designs Pvt Ltd. All Rights Reserved</span>
+                </div>   
+            </div>
+        </div>
+    </footer> <!-- Footer-Section -->
 
         
-    </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/569015700f.js" crossorigin="anonymous"></script>

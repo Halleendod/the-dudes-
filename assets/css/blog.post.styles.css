@@ -21,6 +21,8 @@ h4 {
     border-radius: 15px;
 }
 
+/* Popular posts */
+
 .popular-posts .card {
     margin-top: 10px;
     border-radius: 15px;
@@ -33,6 +35,8 @@ h4 {
 .popular-posts img {
     padding-right: 10px;
 }
+
+/* Comments */
 
 .btn-submit {
     color: white;
