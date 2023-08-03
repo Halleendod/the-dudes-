@@ -152,16 +152,6 @@ nav ul li a:hover {
   color: var(--primary-color);
 }
 
-#hero-first-line {
-  color: var(--primary-color);
-  transition: all 0.5s;
-}
-
-#hero-second-line {
-  color: var(--primary-color);
-  transition: all 0.5s;
-}
-
 #hero-first-line:hover {
   color: var(--secondary-color);
   transition: all 0.5s;
@@ -182,6 +172,10 @@ nav ul li a:hover {
 }
 
 .hero-image {
+  width: 100%;
+}
+
+.hero-image-mobile {
   width: 60%;
 }
 
