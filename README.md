@@ -1,4 +1,4 @@
-# Web Design For Architectural firm
+# Website Design For Architectural Company
 
 ### Version
 0.1.0
