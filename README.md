@@ -20,6 +20,7 @@ In this project I have aimed to build an official website for an architectural c
 - Bootstrap5
 - JavaScript
 - jQuery
+- Figma
 
 ## Supported Links
 
@@ -31,3 +32,9 @@ In this project I have aimed to build an official website for an architectural c
 ![Shop Section](demo/img/mockup2.jpg)
 ![Single Post Section](demo/img/mockup3.jpg)
 ![About Section](demo/img/about.png)
+
+### Support :
+
+***If you like what I do, maybe consider buying me a coffee*** 🥺 👇
+
+<p><a href="https://www.buymeacoffee.com/shehanrathnayake"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="37" width="157" alt="shehanrathnayake" /></a></p><br><br>
