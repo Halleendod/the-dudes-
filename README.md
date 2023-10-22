@@ -30,4 +30,4 @@ In this project I have aimed to build an official website for an architectural c
 
 ![Shop Section](demo/img/mockup2.jpg)
 ![Single Post Section](demo/img/mockup3.jpg)
-![About Section](demo/img/about.jpg)
+![About Section](demo/img/about.png)
